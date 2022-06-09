@@ -16,7 +16,7 @@ spl_autoload_register(function (string $class): void {
         throw new Exception('Namespace Invalide "' . $namespaceParts[0] . '". Nom invalide le namespace doit commencer par "MonsterHunterBlog" or "App"');
     }
 
-    //On reforme notre tableau sur le caractère "\", suivi de '.php'.
+    //On reforme notre tableau sur le caractère "\", suivi de .php
     $filepath = implode(DIRECTORY_SEPARATOR, $namespaceParts) . '.php';
 
     //Si mon fichier n'existe pas, je retourne une erreur.
