@@ -2,38 +2,30 @@
 
 return [
 
-    //Routes Statiques
-    'app_home' => [
+    //Routes Statiques (Nav/Home)
+    'home' => [
         'controller' => App\Controller\AppController::class,
         'method' => 'home'
     ],
-    'app_guide_tuto' => [
+    'guide_tuto' => [
         'controller' => App\Controller\AppController::class,
         'method' => 'guideTuto'
     ],
-    'app_univers' => [
+    'universe_bestiary' => [
         'controller' => App\Controller\AppController::class,
-        'method' => 'univers'
+        'method' => 'bestiary'
     ],
-    'app_bestiaire' => [
-        'controller' => App\Controller\AppController::class,
-        'method' => 'bestiaire'
-    ],
-    'app_armurerie' => [
-        'controller' => App\Controller\AppController::class,
-        'method' => 'armurerie'
-    ],
-    'app_weapons' => [
+    'armory_weapon' => [
         'controller' => App\Controller\AppController::class,
         'method' => 'weapon'
     ],
-    'app_armor' => [
+    'armory_armor' => [
         'controller' => App\Controller\AppController::class,
         'method' => 'armor'
     ],
-    'app_carte' => [
+    'map' => [
         'controller' => App\Controller\AppController::class,
-        'method' => 'carte'
+        'method' => 'map'
     ],
 
     //Routes Articles
@@ -78,6 +70,10 @@ return [
     'comment_edit' => [
         'controller' => App\Controller\CommentController::class,
         'method' => 'edit'
+    ],
+    'article_update' => [
+        'controller' => App\Controller\CommentController::class,
+        'method' => 'update'
     ],
     'comment_delete' => [
         'controller' => App\Controller\CommentController::class,

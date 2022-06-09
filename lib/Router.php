@@ -25,10 +25,10 @@ class Router
                 || !class_exists($route['controller'])
                 || !method_exists($route['controller'], $route['method'])
             ) {
-                header("Location: index.php?page=app_task_index");
+                header("Location: index.php?page=home");
             }
         } else {
-            header("Location: index.php?page=app_task_index");
+            header("Location: index.php?page=home");
         }
 
         $controller = new $route['controller'];
