@@ -79,4 +79,18 @@ return [
         'controller' => App\Controller\CommentController::class,
         'method' => 'delete'
     ],
+
+    // Route User (Connexion, Déconnexion, Inscription)
+    'user_register' => [
+        'controller' => App\Controller\UserController::class,
+        'method' => 'register'
+    ],
+    'user_login' => [
+        'controller' => App\Controller\UserController::class,
+        'method' => 'login'
+    ],
+    'user_logout' => [
+        'controller' => App\Controller\UserController::class,
+        'method' => 'logout'
+    ],
 ];

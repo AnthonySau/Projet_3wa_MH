@@ -11,6 +11,7 @@ abstract class View
     {
         $templatePath =  self::PAGES_PATH . $template;
         $data = $data;
+        $auth = new Authenticator();
         require self::LAYOUT_PATH;
     }
 }
