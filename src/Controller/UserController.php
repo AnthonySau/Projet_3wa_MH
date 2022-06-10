@@ -3,6 +3,10 @@
 namespace App\Controller;
 
 use MonsterHunterBlog\Controller;
+use MonsterHunterBlog\Authenticator;
+use App\Model\Manager\UserManager;
+use App\Model\Entity\User;
+
 
 class UserController extends Controller
 {
@@ -11,7 +15,12 @@ class UserController extends Controller
     {
         $errors = [];
         if (!empty($_POST)) {
-            if (empty($_POST['email']) || empty($_POST['password']) || empty($_POST['confirm_password'])) {
+            if (
+                empty($_POST['email']) ||
+                empty($_POST['pseudo']) ||
+                empty($_POST['password']) ||
+                empty($_POST['confirm_password'])
+            ) {
                 $errors[] = "Tous les champs doivent être saisis.";
             } else {
                 if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
@@ -20,6 +29,10 @@ class UserController extends Controller
                 $emailLength = strlen($_POST['email']);
                 if ($emailLength < 5 || $emailLength > 100) {
                     $errors[] = "L'adresse email doit comporter entre 5 et 100 caractères.";
+                }
+                $pseudoLength = strlen($_POST['pseudo']);
+                if ($pseudoLength < 5 || $pseudoLength > 16) {
+                    $errors[] = "Le pseudo doit comporter entre 5 et 16 caractères.";
                 }
                 if (strlen($_POST['password']) < 8) {
                     $errors[] = "Le mot de passe doit comporter au moins 8 caractères.";
@@ -31,15 +44,20 @@ class UserController extends Controller
             if (empty($errors)) {
                 $manager = new UserManager();
                 $alreadyExists = $manager->findByEmail($_POST['email']);
+                $alreadyExistsPseudo = $manager->findByPseudo($_POST['pseudo']);
                 if ($alreadyExists) {
                     $errors[] = "Cette adresse email existe déjà.";
+                }
+                if ($alreadyExistsPseudo) {
+                    $errors[] = "Ce pseudo existe déjâ.";
                 } else {
                     $user = new User();
                     $user->setEmail($_POST['email']);
+                    $user->setPseudo($_POST['pseudo']);
                     $passwordHash = password_hash($_POST['password'], PASSWORD_BCRYPT);
                     $user->setPassword($passwordHash);
                     $manager->add($user);
-                    $this->redirectToRoute('user_login');
+                    $this->redirectToRoute('home');
                 }
             }
         }
@@ -53,7 +71,10 @@ class UserController extends Controller
     {
         $errors = [];
         if (!empty($_POST)) {
-            if (empty($_POST['email']) || empty($_POST['password'])) {
+            if (
+                empty($_POST['email']) ||
+                empty($_POST['password'])
+            ) {
                 $errors[] = "Tous les champs doivent être saisis.";
             } else {
                 $manager = new UserManager();
@@ -70,7 +91,6 @@ class UserController extends Controller
             }
         }
         $this->renderView('user/login.php', [
-            'title' => 'Connexion',
             'errors' => $errors
         ]);
     }
@@ -78,6 +98,6 @@ class UserController extends Controller
     public function logout(): void
     {
         Authenticator::logout();
-        $this->redirectToRoute('user_login');
+        $this->redirectToRoute('login');
     }
 }

@@ -33,7 +33,6 @@ class Router
         } else {
             header("Location: index.php?page=home");
         }
-
         Authenticator::startSession();
 
         $controller = new $route['controller'];

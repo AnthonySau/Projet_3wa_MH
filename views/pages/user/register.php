@@ -3,6 +3,8 @@
     <?php include '_errors.php' ?>
     <label for="email">Adresse email</label>
     <input type="email" id="email" name="email" required>
+    <label for="pseudo">Pseudo</label>
+    <input type="pseudo" name="pseudo" id="pseudo" required>
     <div class="grid">
         <label for="password">
             Mot de passe
