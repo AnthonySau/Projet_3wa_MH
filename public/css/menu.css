@@ -1,0 +1,110 @@
+/*********************************************/
+/************** HEADER/NAVBAR ****************/
+/*********************************************/
+
+header {
+    position: relative;
+    background: #3357D8;
+    color: white;
+    height: 35px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.40) 10px 7px 3px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 30px;
+}
+
+nav ul li {
+    margin-top: 0.3em;
+    text-transform: uppercase;
+}
+
+.burger {
+    position: absolute;
+    right: 2px;
+    z-index: 2;
+    display: none;
+    width: 50px;
+    height: 35px;
+    background: url('https://api.iconify.design/charm/menu-hamburger.svg?color=white') no-repeat center center / contain;
+    cursor: pointer;
+}
+
+.logo img {
+    margin-top: -40px;
+    max-width: 50%;
+    height: auto;
+}
+
+
+/************* Menu Deroulant *****************/
+
+
+.menu a {
+    display: inline-block;
+    min-width: 10em;
+    color: #eee;
+    text-decoration: none;
+    text-align: center;
+    padding: 2px 5px 2px 5px;
+}
+
+.hover:hover {
+    background-color: rgba(205, 205, 205, 0.644);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.menu>ul {
+    display: flex;
+    justify-content: center;
+}
+
+.displayNone {
+    display: none;
+}
+
+.menuActive {
+    display: block;
+    margin-bottom: 20px;
+}
+
+/*********************************************/
+/************* MEDIA QUERIES *****************/
+/*********************************************/
+
+
+@media screen and (max-width: 760px) {
+
+    .burger {
+        display: block;
+    }
+
+    nav {
+        height: 100%;
+        position: fixed;
+        top: 5%;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        transition: left 1s;
+        background-color: rgba(94, 91, 91, 0.604);
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        padding-top: 10px;
+    }
+
+    .navActive {
+        left: 0;
+    }
+
+}

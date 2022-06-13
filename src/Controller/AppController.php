@@ -14,10 +14,10 @@ class AppController extends Controller
         ]);
     }
 
-    public function guideTuto(): void
+    public function actuality(): void
     {
-        $this->renderView('app/guideTuto.php', [
-            'title' => 'Guide/Tuto'
+        $this->renderView('app/actuality.php', [
+            'title' => 'Actualité'
         ]);
     }
 

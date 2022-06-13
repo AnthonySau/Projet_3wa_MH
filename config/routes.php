@@ -7,9 +7,9 @@ return [
         'controller' => App\Controller\AppController::class,
         'method' => 'home'
     ],
-    'guide_tuto' => [
+    'actuality' => [
         'controller' => App\Controller\AppController::class,
-        'method' => 'guideTuto'
+        'method' => 'actuality'
     ],
     'universe_bestiary' => [
         'controller' => App\Controller\AppController::class,

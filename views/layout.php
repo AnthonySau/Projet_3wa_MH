@@ -7,15 +7,19 @@
     <title>Blog - Monster Hunter</title>
     <!-- Iconify -->
     <script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
-    <!-- Menu Burger CSS -->
-    <link rel="stylesheet" href="./public/css/menuBurger.css">
+    <!-- App CSS -->
+    <link rel="stylesheet" href="./public/css/app.css">
+    <!-- Menu CSS -->
+    <link rel="stylesheet" href="./public/css/menu.css">
+    <!-- Home CSS -->
+    <link rel="stylesheet" href="./public/css/home.css">
     <!-- Menu burger JS -->
-    <script src="./public/js/menuBurger.js" defer></script>
+    <script src="./public/js/menu.js" defer></script>
 </head>
 
 <body>
     <?php require './views/partials/_header.php'; ?>
-    <main>
+    <main class="container-main">
         <?php require $templatePath ?>
     </main>
     <?php require './views/partials/_footer.php'; ?>

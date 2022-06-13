@@ -1,0 +1,26 @@
+/*********************************************/
+/*************** Universelle *****************/
+/*********************************************/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(251, 251, 251);
+}
+
+.container {
+    max-width: 1240px;
+    margin: auto;
+}
+
+.container-main {
+    max-width: 1100px;
+    margin: auto;
+    background-color: #2A2E9C;
+}

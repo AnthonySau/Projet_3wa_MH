@@ -1,0 +1,36 @@
+.img-home {
+    background-image: url("../../public/images/imgFondEcran1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.bgc-mirror {
+    background-color: rgba(240, 248, 255, 0.506);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.bgc-mirror p {
+    padding: 5px;
+}
+
+
+/*********************************************/
+/************* MEDIA QUERIES *****************/
+/*********************************************/
+
+@media screen and (min-width: 767px) {
+
+    .img-home {
+        padding: 150px;
+    }
+
+    .bgc-mirror {
+        padding: 10px;
+    }
+}
