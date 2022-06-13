@@ -93,4 +93,8 @@ return [
         'controller' => App\Controller\UserController::class,
         'method' => 'logout'
     ],
+    'user_profile' => [
+        'controller' => App\Controller\UserController::class,
+        'method' => 'profile'
+    ],
 ];

@@ -100,4 +100,9 @@ class UserController extends Controller
         Authenticator::logout();
         $this->redirectToRoute('login');
     }
+
+    public function profile(): void
+    {
+        $this->renderView('user/profile.php');
+    }
 }

@@ -1,0 +1,47 @@
+form {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 300px;
+    color: white;
+    text-align: left;
+}
+
+fieldset {
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+legend {
+    color: #f9f4f4;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+label {
+    display: block;
+    padding: 10px;
+}
+
+.field-register {
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+input,
+label {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+button {
+    display: block;
+    margin: auto;
+    width: 200px;
+    margin: 20px auto 20px auto;
+    border-radius: 5px;
+    padding: 5px;
+}

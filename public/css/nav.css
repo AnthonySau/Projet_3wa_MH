@@ -69,7 +69,14 @@ nav ul li {
 
 .menuActive {
     display: block;
+    position: relative;
+    bottom: 10%;
     margin-bottom: 20px;
+}
+
+.bgc-menu {
+    background-color: #3357d8;
+    border-radius: 0 0 5px 5px;
 }
 
 /*********************************************/
@@ -101,6 +108,10 @@ nav ul li {
 
     nav ul li {
         padding-top: 10px;
+    }
+
+    .bgc-menu {
+        background-color: rgba(94, 91, 91, 0.2);
     }
 
     .navActive {
