@@ -22,8 +22,11 @@ legend {
     padding: 0 10px 0 10px;
 }
 
-label {
-    display: block;
+input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 10px;
 }
 
@@ -31,9 +34,14 @@ label {
 input,
 label {
     padding: 5px;
-    margin: 5px;
+    margin: 10px;
     border-radius: 5px;
     width: 250px;
+    text-align: start;
+}
+
+.padding {
+    padding: 50px;
 }
 
 /************** Button **************/
@@ -75,8 +83,4 @@ button:hover span {
 button:hover span:after {
     opacity: 1;
     right: 0;
-}
-
-.padding {
-    padding: 50px;
 }

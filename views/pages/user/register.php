@@ -8,11 +8,11 @@
                 <input type="email" id="email" name="email" required>
                 <label for="pseudo">Pseudo</label>
                 <input type="pseudo" name="pseudo" id="pseudo" required>
-                <label for="password">Mot de passe<input type="password" id="password"
-                        name="password" required>
+                <label for="password">Mot de passe
+                    <input type="password" id="password" name="password" required>
                 </label>
-                <label for="confirm_password">Répétez votre mot de passe<input type="password"
-                        id="confirm_password" name="confirm_password" required>
+                <label for="confirm_password">Confirmer votre mot de passe
+                    <input type="password" id="confirm_password" name="confirm_password" required>
                 </label>
                 <button type="submit"><span>S'inscrire</span></button>
             </div>
