@@ -24,6 +24,11 @@
     <script src="./public/js/menu.js" defer></script>
     <!-- register CSS -->
     <link rel="stylesheet" href="./public/css/register.css">
+    <!-- slider CSS -->
+    <link rel="stylesheet" href="./public/css/slider.css">
+    <!-- slider JS -->
+    <script src="./public/js/slider.js" defer></script>
+    <script src="./public/js/appSlider.js" defer></script>
 </head>
 
 <body>

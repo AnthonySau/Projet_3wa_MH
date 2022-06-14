@@ -9,6 +9,18 @@ h1 {
     margin-bottom: 20px;
 }
 
+h2 {
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: 15px auto;
+}
+
+.title {
+    background-color: #3357D8;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.40) 0 7px 3px;
+}
+
 .bgc-mirror {
     background-color: rgba(240, 248, 255, 0.506);
     border-radius: 10px;
@@ -16,7 +28,8 @@ h1 {
 }
 
 .bgc-mirror p {
-    padding: 10px;
+    padding: 15px;
+    margin: 20px;
 }
 
 

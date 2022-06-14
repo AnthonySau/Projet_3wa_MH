@@ -11,14 +11,11 @@
     font-family: volkhov, sans-serif;
 }
 
-body {
-    background-color: rgb(251, 251, 251);
-}
-
 .container {
     max-width: 1240px;
     margin: auto;
 }
+
 
 .container-main {
     background-color: #2A2E9C;
