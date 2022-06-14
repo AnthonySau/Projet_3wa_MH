@@ -22,6 +22,7 @@
                     </li>
                     <hr>
                     <li><a class="hover" href="index.php?page=map">Cartes</a></li>
+                    <hr>
                 </ul>
             </li>
             <?php if (!$auth->isAuthenticated()) { ?>

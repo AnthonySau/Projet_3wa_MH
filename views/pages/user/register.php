@@ -1,5 +1,5 @@
-<section class="container-main">
-    <fieldset class="field-register">
+<section class="padding">
+    <fieldset>
         <legend>Inscription</legend>
         <form action="" method="POST">
             <div class="flex">
@@ -14,7 +14,7 @@
                 <label for="confirm_password">Répétez votre mot de passe<input type="password"
                         id="confirm_password" name="confirm_password" required>
                 </label>
-                <button type="submit">S'inscrire</button>
+                <button type="submit"><span>S'inscrire</span></button>
             </div>
         </form>
     </fieldset>

@@ -21,9 +21,7 @@ body {
 }
 
 .container-main {
-    max-width: 1100px;
-    height: auto;
-    margin: auto;
-    padding: 20px;
     background-color: #2A2E9C;
+    max-width: 1150px;
+    margin: auto;
 }
