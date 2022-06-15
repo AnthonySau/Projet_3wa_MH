@@ -3,35 +3,48 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
     <title>Blog - Monster Hunter</title>
     <!-- Iconify -->
     <script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
     <!-- Font Family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital@0;1&display=swap"
-        rel="stylesheet">
+          rel="stylesheet">
     <!-- App CSS -->
-    <link rel="stylesheet" href="./public/css/app.css">
+    <link rel="stylesheet"
+          href="./public/css/app.css">
     <!-- Nav CSS -->
-    <link rel="stylesheet" href="./public/css/nav.css">
+    <link rel="stylesheet"
+          href="./public/css/nav.css">
     <!-- Footer CSS -->
-    <link rel="stylesheet" href="./public/css/footer.css">
+    <link rel="stylesheet"
+          href="./public/css/footer.css">
     <!-- Home CSS -->
-    <link rel="stylesheet" href="./public/css/home.css">
+    <link rel="stylesheet"
+          href="./public/css/home.css">
     <!-- Menu JS -->
-    <script src="./public/js/menu.js" defer></script>
+    <script src="./public/js/menu.js"
+            defer></script>
     <!-- register CSS -->
-    <link rel="stylesheet" href="./public/css/register.css">
+    <link rel="stylesheet"
+          href="./public/css/register.css">
     <!-- slider CSS -->
-    <link rel="stylesheet" href="./public/css/slider.css">
+    <link rel="stylesheet"
+          href="./public/css/slider.css">
     <!-- slider JS -->
-    <script src="./public/js/slider.js" defer></script>
-    <script src="./public/js/appSlider.js" defer></script>
+    <script src="./public/js/slider.js"
+            defer></script>
+    <script src="./public/js/appSlider.js"
+            defer></script>
 </head>
 
-<body>
+<body class="parralax">
     <?php require './views/partials/_header.php'; ?>
     <main class="container-main">
         <?php require $templatePath ?>

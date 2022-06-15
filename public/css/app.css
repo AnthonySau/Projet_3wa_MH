@@ -18,7 +18,15 @@
 
 
 .container-main {
-    background-color: #2A2E9C;
     max-width: 1150px;
     margin: auto;
+}
+
+.parralax {
+    background-image: url('../../public/images/arriere-plan-img-mh.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }

@@ -8,9 +8,9 @@ class Slider {
     this.width = 660;
     this.height = 420;
     this.currentSlide = 0;
-    this.interval = 5000;
+    this.interval = 3000;
     this.loop = true;
-    this.autoplay = false;
+    this.autoplay = true;
 
     if (options != null && typeof options === 'object') {
       if (options.width && typeof options.width === 'number') this.width = options.width;
@@ -48,7 +48,7 @@ class Slider {
 
   createPrevArrow() {
     const divPrevArrow = document.createElement('div');
-    divPrevArrow.innerText = 'Prec';
+    divPrevArrow.innerText = '<';
     divPrevArrow.classList.add('arrow');
     divPrevArrow.classList.add('prev');
 
@@ -58,7 +58,7 @@ class Slider {
 
   createNextArrow() {
     const divNextArrow = document.createElement('div');
-    divNextArrow.innerText = 'Suiv';
+    divNextArrow.innerText = '>';
     divNextArrow.classList.add('arrow');
     divNextArrow.classList.add('next');
 

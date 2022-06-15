@@ -13,7 +13,7 @@ h2 {
     color: white;
     text-align: center;
     padding: 5px;
-    margin: 15px auto;
+    margin: auto;
 }
 
 .title {
@@ -30,6 +30,16 @@ h2 {
 .bgc-mirror p {
     padding: 15px;
     margin: 20px;
+}
+
+/*********** Couleur fond ***********/
+
+.bgc-blue {
+    background-color: #2A2E9C;
+}
+
+.bgc-oppacity {
+    background-color: #3357d800;
 }
 
 
