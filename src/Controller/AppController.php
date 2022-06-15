@@ -23,20 +23,20 @@ class AppController extends Controller
 
     public function bestiary(): void
     {
-        $this->renderView('app/universe_bestiary.php', [
+        $this->renderView('app/bestiary.php', [
             'title' => 'Bestiaire'
         ]);
     }
     public function weapon(): void
     {
-        $this->renderView('app/armory_weapon.php', [
+        $this->renderView('app/weapon.php', [
             'title' => 'Arme'
         ]);
     }
 
     public function armor(): void
     {
-        $this->renderView('app/armory_armor.php', [
+        $this->renderView('app/armor.php', [
             'title' => 'Armure'
         ]);
     }

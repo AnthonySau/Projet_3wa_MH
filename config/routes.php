@@ -2,85 +2,36 @@
 
 return [
 
-    //Routes Statiques (Nav/Home)
+    // Routes Application (statique)
+
     'home' => [
         'controller' => App\Controller\AppController::class,
         'method' => 'home'
     ],
-    'actuality' => [
+    'app_actuality' => [
         'controller' => App\Controller\AppController::class,
         'method' => 'actuality'
     ],
-    'universe_bestiary' => [
+    'app_bestiary' => [
         'controller' => App\Controller\AppController::class,
         'method' => 'bestiary'
     ],
-    'armory_weapon' => [
+    'app_weapon' => [
         'controller' => App\Controller\AppController::class,
         'method' => 'weapon'
     ],
-    'armory_armor' => [
+    'app_armor' => [
         'controller' => App\Controller\AppController::class,
         'method' => 'armor'
     ],
-    'map' => [
+    'app_map' => [
         'controller' => App\Controller\AppController::class,
         'method' => 'map'
     ],
 
-    //Routes Articles
-    'article_list' => [
-        'controller' => App\Controller\ArticleController::class,
-        'method' => 'list'
-    ],
-    'article_create' => [
-        'controller' => App\Controller\ArticleController::class,
-        'method' => 'create'
-    ],
-    'article_show' => [
-        'controller' => App\Controller\ArticleController::class,
-        'method' => 'show'
-    ],
-    'article_add' => [
-        'controller' => App\Controller\ArticleController::class,
-        'method' => 'add'
-    ],
-    'article_edit' => [
-        'controller' => App\Controller\ArticleController::class,
-        'method' => 'edit'
-    ],
-    'article_delete' => [
-        'controller' => App\Controller\ArticleController::class,
-        'method' => 'delete'
-    ],
-    'article_update' => [
-        'controller' => App\Controller\ArticleController::class,
-        'method' => 'update'
-    ],
 
-    //Routes Commentaires
-    'comment_show' => [
-        'controller' => App\Controller\CommentController::class,
-        'method' => 'show'
-    ],
-    'comment_add' => [
-        'controller' => App\Controller\CommentController::class,
-        'method' => 'add'
-    ],
-    'comment_edit' => [
-        'controller' => App\Controller\CommentController::class,
-        'method' => 'edit'
-    ],
-    'article_update' => [
-        'controller' => App\Controller\CommentController::class,
-        'method' => 'update'
-    ],
-    'comment_delete' => [
-        'controller' => App\Controller\CommentController::class,
-        'method' => 'delete'
-    ],
+    // Route User (Gestion authentification)
 
-    // Route User (Connexion, Déconnexion, Inscription)
     'user_register' => [
         'controller' => App\Controller\UserController::class,
         'method' => 'register'
@@ -97,4 +48,8 @@ return [
         'controller' => App\Controller\UserController::class,
         'method' => 'profile'
     ],
+
+    // Routes Article (CRUD)
+
+    // Routes Commentaire (CRUD)
 ];

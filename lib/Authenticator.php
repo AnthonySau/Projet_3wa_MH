@@ -12,28 +12,24 @@ class Authenticator
 {
 
     // Démarre la session déclencher par le routeur à chaque route appelés.
-    // Déclanchement coté back.
     static public function startSession(): void
     {
         session_start();
     }
 
-    //Récupère 'user_id' contenenant l'identifiant de l'utilisateur.
-    // Déclanchement coté back.
+    // Récupère 'user_id' contenenant l'identifiant de l'utilisateur.
     static public function login(int $id): void
     {
         $_SESSION['user_id'] = $id;
     }
 
-    // Retourne 'true' si l'utilisateur est authentifié. Gere l'affichage de nos templates.
-    // Déclanchement coté front.
+    // Retourne 'true' si l'utilisateur est connecté. Gère l'affichage de nos templates.
     public function isAuthenticated(): bool
     {
         return isset($_SESSION['user_id']) ? true : false;
     }
 
     // Retourne l'utilisateur connecté. Utile pour afficher des infos (email,etc)
-    // Déclanchement coté front.
     public function getUser(): User
     {
         $userManager = new UserManager();
@@ -45,5 +41,13 @@ class Authenticator
     {
         $_SESSION['user_id'] = null;
         session_destroy();
+    }
+
+    // Redirige vers 'connexion' pour visionner le site. 
+    static public function firewall(): void
+    {
+        if (!isset($_SESSION['user_id'])) {
+            Router::redirectToRoute('user_login');
+        }
     }
 }

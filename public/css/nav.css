@@ -71,7 +71,6 @@ nav ul li {
     display: block;
     position: relative;
     bottom: 10%;
-    margin-bottom: 20px;
 }
 
 .bgc-menu {
@@ -111,6 +110,7 @@ hr {
     nav ul {
         flex-direction: column;
         text-align: center;
+        margin-top: -20px;
     }
 
     nav ul li {
@@ -123,6 +123,14 @@ hr {
 
     .navActive {
         left: 0;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    .displayNone {
+        margin-top: 5px;
     }
 
 }
