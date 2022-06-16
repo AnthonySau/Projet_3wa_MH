@@ -51,5 +51,47 @@ return [
 
     // Routes Article (CRUD)
 
+    'add_article' => [
+        'controller' => App\Controller\ArticleController::class,
+        'method' => 'add'
+    ],
+    // 'show_article' => [
+    //     'controller' => App\Controller\ArticleController::class,
+    //     'method' => 'show'
+    // ],
+    // 'list_article' => [
+    //     'controller' => App\Controller\ArticleController::class,
+    //     'method' => 'list'
+    // ],
+    // 'delete_article' => [
+    //     'controller' => App\Controller\ArticleController::class,
+    //     'method' => 'delete'
+    // ],
+    // 'update_article' => [
+    //     'controller' => App\Controller\ArticleController::class,
+    //     'method' => 'update'
+    // ],
+
     // Routes Commentaire (CRUD)
+
+    // 'add_comment' => [
+    //     'controller' => App\Controller\CommentController::class,
+    //     'method' => 'add'
+    // ],
+    // 'show_comment' => [
+    //     'controller' => App\Controller\CommentController::class,
+    //     'method' => 'show'
+    // ],
+    // 'list_comment' => [
+    //     'controller' => App\Controller\CommentController::class,
+    //     'method' => 'list'
+    // ],
+    // 'delete_comment' => [
+    //     'controller' => App\Controller\CommentController::class,
+    //     'method' => 'delete'
+    // ],
+    // 'update_comment' => [
+    //     'controller' => App\Controller\CommentController::class,
+    //     'method' => 'update'
+    // ],
 ];
