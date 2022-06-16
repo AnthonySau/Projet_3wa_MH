@@ -55,22 +55,22 @@ return [
         'controller' => App\Controller\ArticleController::class,
         'method' => 'add'
     ],
-    // 'show_article' => [
-    //     'controller' => App\Controller\ArticleController::class,
-    //     'method' => 'show'
-    // ],
-    // 'list_article' => [
-    //     'controller' => App\Controller\ArticleController::class,
-    //     'method' => 'list'
-    // ],
-    // 'delete_article' => [
-    //     'controller' => App\Controller\ArticleController::class,
-    //     'method' => 'delete'
-    // ],
-    // 'update_article' => [
-    //     'controller' => App\Controller\ArticleController::class,
-    //     'method' => 'update'
-    // ],
+    'list_article' => [
+        'controller' => App\Controller\ArticleController::class,
+        'method' => 'list'
+    ],
+    'show_article' => [
+        'controller' => App\Controller\ArticleController::class,
+        'method' => 'show'
+    ],
+    'delete_article' => [
+        'controller' => App\Controller\ArticleController::class,
+        'method' => 'delete'
+    ],
+    'update_article' => [
+        'controller' => App\Controller\ArticleController::class,
+        'method' => 'update'
+    ],
 
     // Routes Commentaire (CRUD)
 

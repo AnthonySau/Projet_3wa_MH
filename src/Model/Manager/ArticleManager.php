@@ -8,6 +8,7 @@ use App\Model\Entity\Article;
 class ArticleManager extends Manager
 {
 
+    //Fonction qui recupère un article
     public function find(int $id): Article
     {
         $sql = 'SELECT * FROM articles WHERE articles.id = :id';
@@ -19,6 +20,7 @@ class ArticleManager extends Manager
         return new Article($article);
     }
 
+    // Fonction qui recupère tous les articles
     public function findAll(): array
     {
         $sql = 'SELECT * FROM articles';
@@ -31,6 +33,7 @@ class ArticleManager extends Manager
         return $articlesObjects;
     }
 
+    // Fonction qui recupère les derniers articles
     public function findLasts(int $nb): array
     {
         $sql = 'SELECT * FROM articles ORDER BY articles.created_at DESC LIMIT :limit';
@@ -46,20 +49,23 @@ class ArticleManager extends Manager
         return $articlesObjects;
     }
 
+    // Fonction pour ajouter un article
     public function add(Article $article): void
     {
-        $sql = 'INSERT INTO articles (title, resume, content, created_at) VALUES (:title, :resume, :content, :created_at)';
+        $sql = 'INSERT INTO articles (title, content, created_at, id_user) VALUES (:title, :content, :created_at, :id_user)';
         $query = $this->connection->prepare($sql);
         $query->execute([
             'title' => $article->getTitle(),
             'content' => $article->getContent(),
-            'created_at' => date_format(new \DateTime('NOW'), 'Y-m-d H:i:s')
+            'created_at' => date_format(new \DateTime('NOW'), 'Y-m-d H:i:s'),
+            'id_user' => $article->getUser()->getId()
         ]);
     }
 
+    // Fonction pour mettre à jour un article
     public function edit(Article $article, int $id): void
     {
-        $sql = "UPDATE articles SET title = :title, resume = :resume, content = :content, updated_at = :updated_at WHERE id = :id";
+        $sql = "UPDATE articles SET title = :title, content = :content, updated_at = :updated_at WHERE id = :id";
         $query = $this->connection->prepare($sql);
         $query->execute([
             'title' => $article->getTitle(),
@@ -69,6 +75,7 @@ class ArticleManager extends Manager
         ]);
     }
 
+    // Fonction pour supprimer un article
     public function delete(int $id): void
     {
         $sql = "DELETE FROM articles WHERE id = :id";

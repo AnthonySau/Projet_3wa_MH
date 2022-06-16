@@ -12,7 +12,6 @@ class Article
     private \DateTime $updatedAt;
     private User $user;
     private Comment $comments;
-    private Like $like;
 
     public function __construct(?array $article = [])
     {
@@ -92,7 +91,7 @@ class Article
         $this->user = $user;
     }
 
-    public function getComments(): Comment
+    public function getComment(): Comment
     {
         return $this->comments;
     }

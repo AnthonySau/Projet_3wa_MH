@@ -12,7 +12,7 @@
             <li><a class="hover"
                    href="index.php?page=home">Accueil</a></li>
             <li><a class="hover"
-                   href="index.php?page=app_actuality">Actualité</a>
+                   href="index.php?page=list_article">Actualité</a>
             <li><a class="univers hover"
                    href="#">Univers</a>
                 <ul class="displayNone bgc-menu">

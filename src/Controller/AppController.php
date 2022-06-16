@@ -14,13 +14,6 @@ class AppController extends Controller
         ]);
     }
 
-    public function actuality(): void
-    {
-        $this->renderView('app/actuality.php', [
-            'title' => 'Actualité'
-        ]);
-    }
-
     public function bestiary(): void
     {
         $this->renderView('app/bestiary.php', [
