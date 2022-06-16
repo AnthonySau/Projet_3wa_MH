@@ -8,6 +8,8 @@ class Comment
     private string $content;
     private \DateTime $createdAt;
     private \DateTime $updateAt;
+    private User $user;
+    private Article $article;
 
     public function __construct(?array $comment = [])
     {
@@ -19,6 +21,10 @@ class Comment
             $this->createdAt = new \DateTime($comment['created_at']);
         if (isset($comment['updated_at']))
             $this->updatedAt = new \DateTime($comment['updated_at']);
+        if (isset($comment['user']))
+            $this->idUser = $comment['user'];
+        if (isset($comment['article']))
+            $this->idArticle = $comment['article'];
     }
 
     public function getId(): int
@@ -59,5 +65,15 @@ class Comment
     public function setUpdateAt(\Datetime $updateAt): void
     {
         $this->updateAt = $updateAt;
+    }
+
+    public function getUser(): User
+    {
+        return $this->user;
+    }
+
+    public function getArticle(): Article
+    {
+        return $this->article;
     }
 }

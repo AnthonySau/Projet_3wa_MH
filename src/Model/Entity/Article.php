@@ -10,6 +10,9 @@ class Article
     private string $content;
     private \DateTime $createdAt;
     private \DateTime $updatedAt;
+    private User $user;
+    private Comment $comments;
+    private Like $like;
 
     public function __construct(?array $article = [])
     {
@@ -23,6 +26,10 @@ class Article
             $this->createdAt = new \DateTime($article['created_at']);
         if (isset($article['updated_at']))
             $this->updatedAt = new \DateTime($article['updated_at']);
+        if (isset($article['comments']))
+            $this->comments = $article['comments'];
+        if (isset($article['user']))
+            $this->user = $article['user'];
     }
 
     public function getId(): int
@@ -73,5 +80,25 @@ class Article
     public function setUpdatedAt(\Datetime $updatedAt): void
     {
         $this->updatedAt = $updatedAt;
+    }
+
+    public function getUser(): User
+    {
+        return $this->user;
+    }
+
+    public function setUser(User $user): void
+    {
+        $this->user = $user;
+    }
+
+    public function getComments(): Comment
+    {
+        return $this->comments;
+    }
+
+    public function setComment(Comment $comments): void
+    {
+        $this->comment = $comments;
     }
 }
