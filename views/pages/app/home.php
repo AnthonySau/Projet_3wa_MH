@@ -33,35 +33,36 @@
     <div class="title">
         <h2>Univers Monster Hunter</h2>
     </div>
-    <article class="img-article_bestiaire">
+    <article>
         <main>
-            <h3>Bestiaire</h3>
-            <p>Visite les monstres actuel en jeu</p>
+            <a href="index.php?page=app_bestiary">
+                <h3>Bestiaire</h3>
+                <p>Visite les monstres actuel en jeu</p>
+            </a>
         </main>
     </article>
-    <article class="img-article_armurerie">
+    <article>
         <main>
-            <div>
+            <a href="index.php?page=app_armor">
                 <h3>Armures</h3>
                 <p>Visite les armures dispo en jeu</p>
-            </div>
-            <div>
+            </a>
+        </main>
+    </article>
+    <article>
+        <main>
+            <a href="index.php?page=app_weapon">
                 <h3>Armes</h3>
                 <p>Visite les armes dispo en jeu</p>
-            </div>
+            </a>
         </main>
     </article>
-    <article class="img-article_carte">
+    <article>
         <main>
-            <h3>Cartes</h3>
-            <p>Visite le repère des monstres</p>
+            <a href="index.php?page=app_map">
+                <h3>Cartes</h3>
+                <p>Visite le repère des monstres</p>
+            </a>
         </main>
     </article>
-</section>
-
-<!-- Section Communauté -->
-<section class="bgc-blue">
-    <div class="title">
-        <h2>Communauté</h2>
-    </div>
 </section>
