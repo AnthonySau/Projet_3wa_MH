@@ -1,4 +1,4 @@
-<footer class="container">
+<footer>
     <div class="colonne">
         <div>
             <h4>Partenaires :</h4>

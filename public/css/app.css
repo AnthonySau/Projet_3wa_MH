@@ -5,33 +5,29 @@
 *,
 ::before,
 ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: volkhov, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: volkhov, sans-serif;
 }
 
 .container {
-    max-width: 1240px;
-    margin: auto;
+  max-width: 1240px;
+  margin: auto;
 }
-
 
 .container-main {
-    max-width: 1150px;
-    margin: auto;
-}
-
-.parralax {
-    background-image: url('../../public/images/arriere-plan-img-mh.jpeg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+  max-width: 1150px;
+  margin: auto;
 }
 
 a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
+}
+
+/*********** Couleur fond ***********/
+
+.bgc-blue {
+  background-color: #2a2e9c;
 }
