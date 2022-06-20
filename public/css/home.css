@@ -5,6 +5,10 @@
   padding: 30px;
 }
 
+h1 {
+  padding: 20px;
+}
+
 h2 {
   color: white;
   text-align: center;
@@ -14,8 +18,9 @@ h2 {
 
 h3 {
   color: #fff;
-  margin: auto;
+  margin: 15px auto;
   text-align: center;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -68,7 +73,7 @@ article {
 }
 
 article main {
-  background-color: #10101185;
+  background-color: #1010114e;
   border-radius: 20px;
   padding: 10px;
 }
@@ -82,7 +87,7 @@ article p {
 /************* MEDIA QUERIES *****************/
 /*********************************************/
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 867px) {
   .img-home {
     padding: 150px;
   }
@@ -97,12 +102,20 @@ article p {
   }
 
   .card {
-    max-width: 300px;
+    width: 300px;
     padding: 30px;
     margin: 20px;
     border: 1px solid #fff;
     text-align: center;
     border-radius: 5px;
     color: #fff;
+  }
+
+  article {
+    max-width: 25%;
+  }
+
+  article main {
+    padding: 20px;
   }
 }

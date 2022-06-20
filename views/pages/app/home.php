@@ -22,17 +22,17 @@
         </div>
         <div class="flex">
             <div class="card">
-                <h5>Lorem, ipsum.</h5>
+                <h3>Lorem, ipsum.</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est rem tempora provident ex odio nostrum dolor officiis possimus rerum eos?</p>
                 <button><a href="#">Voir l'article</a></button>
             </div>
             <div class="card">
-                <h5>Lorem, ipsum.</h5>
+                <h3>Lorem, ipsum.</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est rem tempora provident ex odio nostrum dolor officiis possimus rerum eos?</p>
                 <button><a href="#">Voir l'article</a></button>
             </div>
             <div class="card">
-                <h5>Lorem, ipsum.</h5>
+                <h3>Lorem, ipsum.</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est rem tempora provident ex odio nostrum dolor officiis possimus rerum eos?</p>
                 <button><a href="#">Voir l'article</a></button>
             </div>
@@ -44,37 +44,39 @@
         <div class="title">
             <h2>Univers Monster Hunter</h2>
         </div>
-        <article>
-            <main>
-                <a href="index.php?page=app_bestiary">
-                    <h3>Bestiaire</h3>
-                    <p>Visite les monstres actuel en jeu</p>
-                </a>
-            </main>
-        </article>
-        <article>
-            <main>
-                <a href="index.php?page=app_armor">
-                    <h3>Armures</h3>
-                    <p>Visite les armures dispo en jeu</p>
-                </a>
-            </main>
-        </article>
-        <article>
-            <main>
-                <a href="index.php?page=app_weapon">
-                    <h3>Armes</h3>
-                    <p>Visite les armes dispo en jeu</p>
-                </a>
-            </main>
-        </article>
-        <article>
-            <main>
-                <a href="index.php?page=app_map">
-                    <h3>Cartes</h3>
-                    <p>Visite le repère des monstres</p>
-                </a>
-            </main>
-        </article>
+        <div class="flex">
+            <article>
+                <main>
+                    <a href="index.php?page=app_bestiary">
+                        <h5>Bestiaire</h5>
+                        <p>Regardes les monstres que tu vas devoir affronter.</p>
+                    </a>
+                </main>
+            </article>
+            <article>
+                <main>
+                    <a href="index.php?page=app_armor">
+                        <h5>Armures</h5>
+                        <p>Découvre les armures qui te protègerons.</p>
+                    </a>
+                </main>
+            </article>
+            <article>
+                <main>
+                    <a href="index.php?page=app_weapon">
+                        <h5>Armes</h5>
+                        <p>Découvre les armes avec lesquels tu taperas.</p>
+                    </a>
+                </main>
+            </article>
+            <article>
+                <main>
+                    <a href="index.php?page=app_map">
+                        <h5>Cartes</h5>
+                        <p>Découvre où est-ce que tu combattras.</p>
+                    </a>
+                </main>
+            </article>
     </section>
+    </div>
 </section>

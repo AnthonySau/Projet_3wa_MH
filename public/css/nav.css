@@ -109,7 +109,7 @@ header {
   transform: translateX(0);
 }
 
-/******************/
+/********* Toggle class ********/
 
 .displayNone {
   display: none;
@@ -118,3 +118,7 @@ header {
 .menuDeroulant {
   display: block;
 }
+
+/*********************************************/
+/************* MEDIA QUERIES *****************/
+/*********************************************/
