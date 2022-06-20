@@ -1,24 +1,29 @@
 footer {
-    display: flex;
-    flex-direction: column;
-    background-color: #3257d8;
-    color: white;
-    padding: 35px;
-    height: auto;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #3257d8;
+  color: white;
+  padding: 35px;
+  height: auto;
+  text-align: center;
 }
 
 footer div {
-    padding: 20px;
+  padding: 20px;
 }
 
 footer div .flex {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 footer div .flex a {
-    padding: 10px;
+  padding: 10px;
+}
+
+.iconify {
+  text-align: center;
+  margin-right: 10px;
 }
 
 /*********************************************/
@@ -26,21 +31,20 @@ footer div .flex a {
 /*********************************************/
 
 @media screen and (min-width: 767px) {
+  footer div {
+    text-align: center;
+  }
 
-    footer div {
-        text-align: center;
-    }
+  .colonne {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
 
-    .colonne {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-    }
-
-    h4 {
-        padding: 5px;
-        max-width: 200px;
-        margin: auto;
-        text-align: center;
-    }
+  h4 {
+    padding: 5px;
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
+  }
 }

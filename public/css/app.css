@@ -31,3 +31,59 @@ a {
 .bgc-blue {
   background-color: #2a2e9c;
 }
+
+/* TITRE  */
+h1 {
+  display: flex;
+  justify-content: start;
+  padding: 25px 0 0 5px;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+}
+
+h3 {
+  color: #fff;
+  margin: 0 auto 15px auto;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h4 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2px;
+  line-height: 40px;
+}
+
+h5 {
+  text-align: center;
+  margin: 0 auto 20px auto;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+h6 {
+  background-color: #2a2e9c93;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 5px;
+}
+
+/*********************************************/
+/************* MEDIA QUERIES *****************/
+/*********************************************/
+
+@media screen and (min-width: 867px) {
+  h1 {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+}

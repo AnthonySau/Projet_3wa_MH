@@ -3,7 +3,7 @@
     <section>
         <div class="img-home">
             <div class="bgc-mirror">
-                <h1>Bienvenue sur mon blog Monster Hunter</h1>
+                <h2>Bienvenue sur mon blog Monster Hunter World</h2>
                 <p>
                     Monster Hunter est une série de jeux vidéo développée et éditée par Capcom
                     <br>
@@ -18,21 +18,21 @@
     <!-- Section Actualité -->
     <section>
         <div class="title">
-            <h2>Acutalité</h2>
+            <h3>Acutalité</h3>
         </div>
         <div class="flex">
             <div class="card">
-                <h3>Lorem, ipsum.</h3>
+                <h4>Lorem, ipsum.</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est rem tempora provident ex odio nostrum dolor officiis possimus rerum eos?</p>
                 <button><a href="#">Voir l'article</a></button>
             </div>
             <div class="card">
-                <h3>Lorem, ipsum.</h3>
+                <h4>Lorem, ipsum.</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est rem tempora provident ex odio nostrum dolor officiis possimus rerum eos?</p>
                 <button><a href="#">Voir l'article</a></button>
             </div>
             <div class="card">
-                <h3>Lorem, ipsum.</h3>
+                <h4>Lorem, ipsum.</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est rem tempora provident ex odio nostrum dolor officiis possimus rerum eos?</p>
                 <button><a href="#">Voir l'article</a></button>
             </div>
@@ -42,7 +42,7 @@
     <!-- Section Univers -->
     <section>
         <div class="title">
-            <h2>Univers Monster Hunter</h2>
+            <h3>Univers Monster Hunter</h3>
         </div>
         <div class="flex">
             <article>

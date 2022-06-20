@@ -5,35 +5,6 @@
   padding: 30px;
 }
 
-h1 {
-  padding: 20px;
-}
-
-h2 {
-  color: white;
-  text-align: center;
-  padding: 5px;
-  margin: auto;
-}
-
-h3 {
-  color: #fff;
-  margin: 15px auto;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-h4 {
-  background-color: #2a2e9c93;
-  border-radius: 10px;
-}
-
-h5 {
-  text-align: center;
-  margin: 0 auto 20px auto;
-  font-size: 20px;
-  text-transform: uppercase;
-}
 /* INTRODUCTION */
 
 .bgc-mirror {
