@@ -27,26 +27,20 @@ footer div .flex a {
 
 @media screen and (min-width: 767px) {
 
-    footer {
+    footer div {
         text-align: center;
     }
 
-    footer {
+    .colonne {
         display: flex;
-        flex-wrap: wrap;
-    }
-
-    footer div {
-        display: flex;
-        flex-direction: column;
         justify-content: space-around;
-        margin: auto;
+        align-items: flex-start;
     }
 
     h4 {
-        display: flex;
-        text-align: center;
-        margin: auto;
         padding: 5px;
+        max-width: 200px;
+        margin: auto;
+        text-align: center;
     }
 }

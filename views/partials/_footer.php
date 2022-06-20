@@ -1,5 +1,5 @@
 <footer class="container">
-    <div class="flex">
+    <div class="colonne">
         <div>
             <h4>Partenaires :</h4>
             <div class="flex">
