@@ -1,5 +1,7 @@
 <header>
-       <h1>Blog Monster Hunter World</h1>
+       <a href="index.php?page=home">
+              <h1>Blog Monster Hunter World</h1>
+       </a>
        <button class="toggle-btn">
               <div class="line"></div>
               <div class="line"></div>

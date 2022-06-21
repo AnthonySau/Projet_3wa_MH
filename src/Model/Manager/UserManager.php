@@ -7,7 +7,7 @@ use App\Model\Entity\User;
 
 class UserManager extends Manager
 {
-    // Inserer un nouvel utilisateur.
+    // Fonction pour inserer un nouvel utilisateur
     public function add(User $user): void
     {
         $sql = 'INSERT INTO users (email, password, pseudo, created_at) VALUES (:email, :password, :pseudo, :created_at)';
@@ -20,7 +20,7 @@ class UserManager extends Manager
         ]);
     }
 
-    // Rechercher un utilisateur via son ID.
+    // Fonction pour rechercher un utilisateur via son ID
     public function find(int $id): ?User
     {
         $sql = 'SELECT * FROM users WHERE users.id = :id';
@@ -35,7 +35,7 @@ class UserManager extends Manager
         return new User($user);
     }
 
-    // Vérification adresse mail déjâ utiliser.
+    // Fonction pour vérifier si une adresse mail est déjâ utiliser
     public function findByEmail(string $email): ?User
     {
         $sql = 'SELECT * FROM users WHERE users.email = :email';
@@ -50,7 +50,7 @@ class UserManager extends Manager
         return new User($user);
     }
 
-    // Vérification pseudo déjâ utiliser.
+    // Fonction pour vérifier si un pseudo est déjâ utiliser
     public function findByPseudo(string $pseudo): ?User
     {
         $sql = 'SELECT * FROM users WHERE users.pseudo = :pseudo';

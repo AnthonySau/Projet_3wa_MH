@@ -37,12 +37,12 @@ class Comment
         $this->id = $id;
     }
 
-    public function getText(): string
+    public function getContent(): string
     {
         return $this->content;
     }
 
-    public function setText(string $content): void
+    public function setContent(string $content): void
     {
         $this->content = $content;
     }
@@ -72,8 +72,18 @@ class Comment
         return $this->user;
     }
 
+    public function setUser(User $user): void
+    {
+        $this->user = $user;
+    }
+
     public function getArticle(): Article
     {
         return $this->article;
+    }
+
+    public function setArticle(Article $article): void
+    {
+        $this->article = $article;
     }
 }

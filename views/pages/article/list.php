@@ -7,3 +7,4 @@ foreach ($data['articles'] as $article) { ?>
         </li>
     </a>
 <?php } ?>
+<button><a href="index.php?page=add_article">Ajouter un article</a></button>

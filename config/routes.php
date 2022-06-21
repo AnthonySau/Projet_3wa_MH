@@ -74,24 +74,16 @@ return [
 
     // Routes Commentaire (CRUD)
 
-    // 'add_comment' => [
-    //     'controller' => App\Controller\CommentController::class,
-    //     'method' => 'add'
-    // ],
-    // 'show_comment' => [
-    //     'controller' => App\Controller\CommentController::class,
-    //     'method' => 'show'
-    // ],
-    // 'list_comment' => [
-    //     'controller' => App\Controller\CommentController::class,
-    //     'method' => 'list'
-    // ],
-    // 'delete_comment' => [
-    //     'controller' => App\Controller\CommentController::class,
-    //     'method' => 'delete'
-    // ],
-    // 'update_comment' => [
-    //     'controller' => App\Controller\CommentController::class,
-    //     'method' => 'update'
-    // ],
+    'add_comment' => [
+        'controller' => App\Controller\CommentController::class,
+        'method' => 'add'
+    ],
+    'delete_comment' => [
+        'controller' => App\Controller\CommentController::class,
+        'method' => 'delete'
+    ],
+    'update_comment' => [
+        'controller' => App\Controller\CommentController::class,
+        'method' => 'update'
+    ],
 ];
