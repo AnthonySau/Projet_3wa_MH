@@ -23,7 +23,6 @@
 
 a {
   text-decoration: none;
-  color: #fff;
 }
 
 /*********** Couleur fond ***********/
@@ -68,6 +67,7 @@ h5 {
   margin: 0 auto 20px auto;
   font-size: 15px;
   text-transform: uppercase;
+  color: #fff;
 }
 
 h6 {

@@ -1,4 +1,4 @@
-<h1>Editer l'article</h1>
+<h4>Editer l'article</h4>
 <h2><?= htmlspecialchars($data['article']->getTitle()) ?></h2>
 <p> <?= htmlspecialchars($data['article']->getContent()) ?></p>
 Publié le <?= htmlspecialchars($data['article']->getCreatedAt()->format('d-m-Y')) ?>

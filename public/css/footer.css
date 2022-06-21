@@ -12,6 +12,10 @@ footer div {
   padding: 20px;
 }
 
+footer div a {
+  color: #fff;
+}
+
 footer div .flex {
   display: flex;
   flex-direction: column;
@@ -19,6 +23,7 @@ footer div .flex {
 
 footer div .flex a {
   padding: 10px;
+  color: #fff;
 }
 
 .iconify {

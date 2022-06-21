@@ -1,86 +1,85 @@
 form {
-    display: block;
-    max-width: 300px;
-    margin: auto;
-    padding: 10px;
-    color: white;
-    text-align: left;
+  display: block;
+  max-width: 300px;
+  margin: auto;
+  padding: 10px;
+  color: white;
+  text-align: left;
 }
 
 fieldset {
-    max-width: 500px;
-    margin: auto;
-    text-align: center;
-    border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
 }
 
-
 legend {
-    color: #f9f4f4;
-    font-weight: bold;
-    font-size: 30px;
-    padding: 0 10px 0 10px;
+  color: #f9f4f4;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 0 10px 0 10px;
 }
 
 input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
 }
-
 
 input,
 label {
-    padding: 5px;
-    margin: 10px;
-    border-radius: 5px;
-    width: 250px;
-    text-align: start;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 250px;
+  text-align: start;
 }
 
 .padding {
-    padding: 25px;
+  padding: 25px;
 }
 
 /************** Button **************/
 
 button {
-    display: block;
-    background-color: #3257d8;
-    width: 200px;
-    padding: 10px;
-    margin: 20px auto 20px auto;
-    border-radius: 5px;
-    border: none;
-    text-align: center;
-    transition: all 0.5s;
-    cursor: pointer;
+  display: block;
+  background-color: #3257d8;
+  color: #fff;
+  width: 200px;
+  padding: 10px;
+  margin: 20px auto 20px auto;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
 button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-    color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: #fff;
 }
 
 button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
 }
 
 button:hover span {
-    padding-right: 25px;
+  padding-right: 25px;
 }
 
 button:hover span:after {
-    opacity: 1;
-    right: 0;
+  opacity: 1;
+  right: 0;
 }
