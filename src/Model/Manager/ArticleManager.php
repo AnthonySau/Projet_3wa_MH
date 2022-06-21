@@ -4,6 +4,8 @@ namespace App\Model\Manager;
 
 use MonsterHunterBlog\Manager;
 use App\Model\Entity\Article;
+use App\Model\Manager\UserManager;
+use MonsterHunterBlog\Authenticator;
 
 class ArticleManager extends Manager
 {
@@ -17,17 +19,29 @@ class ArticleManager extends Manager
             'id' => $id
         ]);
         $article = $query->fetch();
+        if (!$article || empty($article)) {
+            return null;
+        }
+
+        $userManager = new UserManager();
+        $article['user'] = $userManager->find($article['id_user']);
+
         return new Article($article);
     }
 
     // Fonction qui recupère tous les articles
-    public function findAll(): array
+    public function findAll(): ?array
     {
         $sql = 'SELECT * FROM articles';
         $query = $this->connection->query($sql);
         $articles = $query->fetchAll();
+        if (!$articles || empty($articles)) {
+            return null;
+        }
         $articlesObjects = [];
+        $userManager = new UserManager();
         foreach ($articles as $article) {
+            $article['user'] = $userManager->find($article['id_user']);
             array_push($articlesObjects, new Article($article));
         }
         return $articlesObjects;
@@ -42,8 +56,13 @@ class ArticleManager extends Manager
             'limit' => $nb
         ]);
         $articles = $query->fetchAll();
+        if (!$articles || empty($articles)) {
+            return null;
+        }
         $articlesObjects = [];
+        $userManager = new UserManager();
         foreach ($articles as $article) {
+            $article['user'] = $userManager->find($article['id_user']);
             array_push($articlesObjects, new Article($article));
         }
         return $articlesObjects;

@@ -11,7 +11,7 @@ class Article
     private \DateTime $createdAt;
     private \DateTime $updatedAt;
     private User $user;
-    private Comment $comments;
+    private array $comments;
 
     public function __construct(?array $article = [])
     {
@@ -91,7 +91,7 @@ class Article
         $this->user = $user;
     }
 
-    public function getComment(): Comment
+    public function getComment(): array
     {
         return $this->comments;
     }
