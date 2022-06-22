@@ -14,21 +14,22 @@ class CommentManager extends Manager
     // Fonction pour ajouter un commentaire
     public function add(Comment $comment): void
     {
-        $sql = 'INSERT INTO comments (content, created_at, id_user) VALUES (:content, :created_at, :id_user)';
+        $sql = 'INSERT INTO comments (content, created_at, id_user, id_article) VALUES (:content, :created_at, :id_user, :id_article)';
         $query = $this->connection->prepare($sql);
         $query->execute([
             'content' => $comment->getContent(),
             'created_at' => date_format(new \DateTime('NOW'), 'Y-m-d H:i:s'),
-            'id_user' => $comment->getUser()->getId()
+            'id_user' => $comment->getUser()->getId(),
+            'id_article' => $comment->getArticle()->getId()
         ]);
     }
 
-    // Fonction pour trouver article avec le commentaire
+    // Fonction pour recupérer un article avec ses commentaires
     public function findComments(int $idArticle): ?array
     {
-        $sql = 'SELECT * FROM comment WHERE comment.id_article = :idArticle';
+        $sql = 'SELECT * FROM comments WHERE comments.id_article = :id_article';
         $query = $this->connection->prepare($sql);
-        $query->bindValue(':idArticle', $idArticle, \PDO::PARAM_INT);
+        $query->bindValue(':id_article', $idArticle, \PDO::PARAM_INT);
         $query->execute();
         $comments = $query->fetchAll();
         if (!$comments || empty($comments)) {
@@ -47,7 +48,7 @@ class CommentManager extends Manager
     // Fonction pour trouver un commentaire
     public function find(int $id): ?Comment
     {
-        $sql = 'SELECT * FROM comment WHERE comment.id = :id';
+        $sql = 'SELECT * FROM comments WHERE comment.id = :id';
         $query = $this->connection->prepare($sql);
         $query->execute([
             'id' => $id
@@ -67,7 +68,7 @@ class CommentManager extends Manager
     // Fonction pour supprimer un commentaire
     public function delete(int $id): void
     {
-        $sql = "DELETE FROM comment WHERE id = :id";
+        $sql = "DELETE FROM comments WHERE id = :id";
         $query = $this->connection->prepare($sql);
         $query->execute([
             'id' => $id
@@ -77,11 +78,11 @@ class CommentManager extends Manager
     // Fonction pour modifier un commentaire
     public function edit(Comment $comment, int $id): void
     {
-        $sql = "UPDATE comment SET text = :text WHERE id=:id";
+        $sql = "UPDATE comments SET text = :text WHERE id=:id";
         $query = $this->connection->prepare($sql);
 
         $query->execute([
-            'text' => $comment->getContent(),
+            'content' => $comment->getContent(),
             'id' => $id
         ]);
     }

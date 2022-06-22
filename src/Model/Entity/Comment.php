@@ -16,15 +16,15 @@ class Comment
         if (isset($comment['id']))
             $this->id = (int) $comment['id'];
         if (isset($comment['content']))
-            $this->text = (string) $comment['content'];
+            $this->content = (string) $comment['content'];
         if (isset($comment['created_at']))
             $this->createdAt = new \DateTime($comment['created_at']);
         if (isset($comment['updated_at']))
             $this->updatedAt = new \DateTime($comment['updated_at']);
         if (isset($comment['user']))
-            $this->idUser = $comment['user'];
+            $this->user = $comment['user'];
         if (isset($comment['article']))
-            $this->idArticle = $comment['article'];
+            $this->article = $comment['article'];
     }
 
     public function getId(): int

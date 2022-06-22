@@ -4,9 +4,10 @@ namespace App\Controller;
 
 use MonsterHunterBlog\Controller;
 use App\Model\Entity\Article;
-use App\Model\Entity\User;
-use MonsterHunterBlog\Authenticator;
+use App\Model\Entity\Comment;
 use App\Model\Manager\ArticleManager;
+use App\Model\Manager\CommentManager;
+use MonsterHunterBlog\Authenticator;
 
 class ArticleController extends Controller
 {
@@ -38,7 +39,23 @@ class ArticleController extends Controller
 
     public function show(): void
     {
+        // Réception des données du commentaire
+        // var_dump($_POST);
         if (isset($_GET['id']) && is_numeric($_GET['id'])) {
+
+            if (isset($_POST['content']) && !empty($_POST)) {
+                $commentManager = new CommentManager();
+                $articleManager = new ArticleManager();
+                $comment = new Comment($_POST);
+                $user = new Authenticator();
+
+                $comment->setUser($user->getUser());
+                $article = $articleManager->find($_GET['id']);
+                $comment->setArticle($article);
+
+                $commentManager->add($comment);
+                $this->redirectToRoute('show_article', ['id' => $comment->getArticle()->getId()]);
+            }
             $articleManager = new ArticleManager();
             $article = $articleManager->find($_GET['id']);
             $this->renderView('article/show.php', [

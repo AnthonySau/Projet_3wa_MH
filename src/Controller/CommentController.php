@@ -11,7 +11,6 @@ use MonsterHunterBlog\Authenticator;
 
 class CommentController extends Controller
 {
-
     public function add(): void
     {
         if (isset($_POST) && !empty($_POST)) {
@@ -25,9 +24,9 @@ class CommentController extends Controller
 
             $comment->setArticle($article);
             $comment->setUser($User->getUser());
-
             $commentManager->add($comment);
-            $this->redirectToRoute('article/show.php');
+
+            $this->redirectToRoute('show_article');
         }
         $this->renderView('article/show.php', [
             'title' => 'Ajouter commentaire'
@@ -40,14 +39,14 @@ class CommentController extends Controller
             $commentManager = new CommentManager();
             $comment = $commentManager->find($_GET['id']);
             if (
-                isset($_POST['text'])
-                && !empty($_POST['text'])
+                isset($_POST['content'])
+                && !empty($_POST['content'])
             ) {
                 $commentManager->edit(new Comment($_POST), $_GET['id']);
                 $this->redirectToRoute('show_article', ['id' => $comment->getArticle()->getId()]);
             }
             $this->renderView('article/show.php', [
-                'title' => 'modifier commentaire',
+                'title' => 'modifier un commentaire',
                 'comment' => $comment
             ]);
         }

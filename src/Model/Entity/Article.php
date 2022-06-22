@@ -91,13 +91,13 @@ class Article
         $this->user = $user;
     }
 
-    public function getComment(): array
+    public function getComments(): array
     {
         return $this->comments;
     }
 
-    public function setComment(Comment $comments): void
+    public function setComments(array $comments): void
     {
-        $this->comment = $comments;
+        $this->comments = $comments;
     }
 }
