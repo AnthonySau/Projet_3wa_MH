@@ -1,7 +1,8 @@
 header {
   background: #3357d8;
   height: 70px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.4) 10px 7px 3px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.4) 0px 5px 3px 3px;
 }
 
 .toggle-btn {
