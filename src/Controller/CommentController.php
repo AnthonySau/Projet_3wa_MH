@@ -17,13 +17,13 @@ class CommentController extends Controller
 
             $commentManager = new CommentManager();
             $comment = new Comment($_POST);
-            $User = new Authenticator();
+            $user = new Authenticator();
 
             $articleManager = new ArticleManager();
             $article = $articleManager->find($_GET['id']);
 
             $comment->setArticle($article);
-            $comment->setUser($User->getUser());
+            $comment->setUser($user->getUser());
             $commentManager->add($comment);
 
             $this->redirectToRoute('show_article');
