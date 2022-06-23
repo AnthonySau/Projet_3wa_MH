@@ -15,7 +15,7 @@
 
 .title {
   background-color: #3357d8;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.4) 0 7px 3px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.4) 0 3px 6px;
 }
 
 .bgc-mirror p {
