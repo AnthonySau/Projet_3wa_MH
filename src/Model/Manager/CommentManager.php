@@ -48,7 +48,7 @@ class CommentManager extends Manager
     // Fonction pour trouver un commentaire
     public function find(int $id): ?Comment
     {
-        $sql = 'SELECT * FROM comments WHERE comment.id = :id';
+        $sql = 'SELECT * FROM comments WHERE comments.id = :id';
         $query = $this->connection->prepare($sql);
         $query->execute([
             'id' => $id
@@ -60,7 +60,7 @@ class CommentManager extends Manager
 
         $articleManager = new ArticleManager();
         $comment['article'] = $articleManager->find($comment['id_article']);
-
+        /* */
 
         return new Comment($comment);
     }
@@ -76,14 +76,14 @@ class CommentManager extends Manager
     }
 
     // Fonction pour modifier un commentaire
-    public function edit(Comment $comment, int $id): void
+    public function edit(Comment $comment): void
     {
         $sql = "UPDATE comments SET text = :text WHERE id=:id";
         $query = $this->connection->prepare($sql);
 
         $query->execute([
             'content' => $comment->getContent(),
-            'id' => $id
+            'id' => $comment->getId()
         ]);
     }
 }
