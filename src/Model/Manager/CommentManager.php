@@ -25,7 +25,7 @@ class CommentManager extends Manager
     }
 
     // Fonction pour recupérer un article avec ses commentaires
-    public function findComments(int $idArticle): ?array
+    public function findComments(int $idArticle): array
     {
         $sql = 'SELECT * FROM comments WHERE comments.id_article = :id_article';
         $query = $this->connection->prepare($sql);
@@ -33,7 +33,7 @@ class CommentManager extends Manager
         $query->execute();
         $comments = $query->fetchAll();
         if (!$comments || empty($comments)) {
-            return null;
+            return [];
         }
 
         $commentObjects = [];
@@ -76,14 +76,14 @@ class CommentManager extends Manager
     }
 
     // Fonction pour modifier un commentaire
-    public function edit(Comment $comment): void
+    public function edit(Comment $comment, int $id): void
     {
-        $sql = "UPDATE comments SET text = :text WHERE id=:id";
+        $sql = "UPDATE comments SET content = :content WHERE id=:id";
         $query = $this->connection->prepare($sql);
 
         $query->execute([
             'content' => $comment->getContent(),
-            'id' => $comment->getId()
+            'id' => $id
         ]);
     }
 }

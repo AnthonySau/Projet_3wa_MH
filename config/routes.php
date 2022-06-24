@@ -78,12 +78,12 @@ return [
         'controller' => App\Controller\CommentController::class,
         'method' => 'add'
     ],
-    'delete_comment' => [
-        'controller' => App\Controller\CommentController::class,
-        'method' => 'delete'
-    ],
     'update_comment' => [
         'controller' => App\Controller\CommentController::class,
         'method' => 'update'
+    ],
+    'delete_comment' => [
+        'controller' => App\Controller\CommentController::class,
+        'method' => 'delete'
     ],
 ];

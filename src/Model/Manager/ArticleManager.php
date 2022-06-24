@@ -11,7 +11,7 @@ class ArticleManager extends Manager
 {
 
     // Fonction qui recupère un article
-    public function find(int $id): Article
+    public function find(int $id): ?Article
     {
         $sql = 'SELECT * FROM articles WHERE articles.id = :id';
         $query = $this->connection->prepare($sql);
@@ -20,11 +20,12 @@ class ArticleManager extends Manager
         ]);
         $article = $query->fetch();
         if (!$article || empty($article)) {
-            return [];
+            return null;
         }
 
         $userManager = new UserManager();
         $commentManager = new CommentManager();
+
         $article['user'] = $userManager->find($article['id_user']);
         $article['comments'] = $commentManager->findComments($id);
         return new Article($article);

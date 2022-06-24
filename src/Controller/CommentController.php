@@ -35,17 +35,17 @@ class CommentController extends Controller
 
     public function update(): void
     {
-        if (isset($_GET['id']) && is_numeric($_GET['id'])) {
+        if (isset($_GET['idComment']) && is_numeric($_GET['idComment'])) {
             $commentManager = new CommentManager();
-            $comment = $commentManager->find($_GET['id']);
+            $comment = $commentManager->find($_GET['idComment']);
             if (
                 isset($_POST['content'])
                 && !empty($_POST['content'])
             ) {
-                $commentManager->edit(new Comment($_POST), $_GET['id']);
-                $this->redirectToRoute('show_article', ['id' => $comment->getArticle()->getId()]);
+                $commentManager->edit(new Comment($_POST), $_GET['idComment']);
+                $this->redirectToRoute('show_article', ['idArticle' => $comment->getArticle()->getId()]);
             }
-            $this->renderView('article/show.php', [
+            $this->renderView('comment/edit.php', [
                 'title' => 'modifier un commentaire',
                 'comment' => $comment
             ]);
@@ -58,7 +58,7 @@ class CommentController extends Controller
             $commentManager = new CommentManager();
             $comment = $commentManager->find($_GET['id']);
             $commentManager->delete($_GET['id']);
-            $this->redirectToRoute('show_article', ['id' => $comment->getArticle()->getId()]);
+            $this->redirectToRoute('show_article', ['idArticle' => $comment->getArticle()->getId()]);
         } else {
             $this->redirectToRoute('home');
         }
