@@ -1,7 +1,3 @@
 # DataBase
 
 /config/database.php
-
-.DS_Store
-
-.gitignore
