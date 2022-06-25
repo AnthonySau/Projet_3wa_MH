@@ -1,4 +1,3 @@
-<h4> Article</h4>
 <h6><?= htmlspecialchars($data['article']->getTitle()) ?></h6>
 <p><?= htmlspecialchars($data['article']->getContent()) ?></p>
 <p>Date de publication <?= htmlspecialchars($data['article']->getCreatedAt()->format('d-m-Y')) ?>
@@ -30,9 +29,16 @@
     <br>
 <?php } ?>
 
-<!-- Formulaire pour poster son commentaire -->
-<form action="" method="POST">
-    <textarea name="content" id="content" placeholder="Votre commentaire...">
+
+<?php if (
+    $auth->isAuthenticated()
+) { ?>
+    <!-- Formulaire pour poster son commentaire -->
+    <form action="" method="POST">
+        <textarea name="content" id="content" placeholder="Votre commentaire...">
     </textarea>
-    <input type="submit" value="Poster mon commentaire">
-</form>
+        <input type="submit" value="Poster mon commentaire">
+    </form>
+
+<?php } else { ?> <p>Vous devez vous <a href="index.php?page=user_login">connecter</a> pour poster un commentaire.</p>
+<?php } ?>

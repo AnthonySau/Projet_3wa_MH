@@ -3,13 +3,9 @@
     <section>
         <div class="img-home">
             <div class="bgc-mirror">
-                <h2>Bienvenue sur mon blog Monster Hunter World</h2>
+                <h2>Bienvenue sur le blog Kokoto-MH</h2>
                 <p>
-                    Monster Hunter est une série de jeux vidéo développée et éditée par Capcom.
-                </p>
-                <p>
-                    Le joueur incarne un chasseur dans un environnement fantasy qui complète des quêtes ayant principalement pour but de chasser ou capturer des monstres. <br>
-                    Au fil du jeu il améliore son équipement avec les materiaux des monstres tués.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt odio cumque natus similique aspernatur vero doloribus, ipsa architecto veniam illo et aliquam corporis voluptatem animi tempore quam exercitationem fugit, optio dolores dolorem velit necessitatibus quod. Excepturi unde similique at cupiditate?
                 </p>
             </div>
         </div>

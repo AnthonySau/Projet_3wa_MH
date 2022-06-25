@@ -22,5 +22,5 @@
             </div>
         </div>
     </div>
-    <p>&copy; 2022 Blog - Monster Hunter. </p>
+    <p>&copy; 2022 Blog - Monster Hunter. Kokoto-MH </p>
 </footer>
