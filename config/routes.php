@@ -81,7 +81,7 @@ return [
         'controller' => App\Controller\ArticleController::class,
         'method' => 'delete'
     ],
-    // Modifié un article
+    // Modifier un article
     'update_article' => [
         'controller' => App\Controller\ArticleController::class,
         'method' => 'update'
