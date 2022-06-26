@@ -2,6 +2,9 @@
 
 namespace App\Model\Entity;
 
+/**
+ * Article
+ */
 class Article
 {
 
@@ -13,6 +16,12 @@ class Article
     private User $user;
     private array $comments;
 
+    /**
+     * __construct
+     *
+     * @param  mixed $article
+     * @return void
+     */
     public function __construct(?array $article = [])
     {
         if (isset($article['id']))
@@ -31,71 +40,148 @@ class Article
             $this->user = $article['user'];
     }
 
+    /**
+     * getId
+     *
+     * @return int
+     */
     public function getId(): int
     {
         return $this->id;
     }
 
+    /**
+     * setId
+     *
+     * @param  mixed $id
+     * @return void
+     */
     public function setId(int $id): void
     {
         $this->id = $id;
     }
 
+    /**
+     * getTitle
+     *
+     * @return string
+     */
     public function getTitle(): string
     {
         return $this->title;
     }
 
+    /**
+     * setTitle
+     *
+     * @param  mixed $title
+     * @return void
+     */
     public function setTitle(string $title): void
     {
         $this->title = $title;
     }
 
+    /**
+     * getContent
+     *
+     * @return string
+     */
     public function getContent(): string
     {
         return $this->content;
     }
 
+    /**
+     * setContent
+     *
+     * @param  mixed $content
+     * @return void
+     */
     public function setContent(string $content): void
     {
         $this->content = $content;
     }
 
+    /**
+     * getCreatedAt
+     *
+     * @return Datetime
+     */
     public function getCreatedAt(): \Datetime
     {
         return $this->createdAt;
     }
 
+    /**
+     * setCreatedAt
+     *
+     * @param  mixed $createdAt
+     * @return void
+     */
     public function setCreatedAt(\Datetime $createdAt): void
     {
         $this->createdAt = $createdAt;
     }
 
+    /**
+     * getUpdatedAt
+     *
+     * @return Datetime
+     */
     public function getUpdatedAt(): \Datetime
     {
         return $this->updatedAt;
     }
 
+    /**
+     * setUpdatedAt
+     *
+     * @param  mixed $updatedAt
+     * @return void
+     */
     public function setUpdatedAt(\Datetime $updatedAt): void
     {
         $this->updatedAt = $updatedAt;
     }
 
+    /**
+     * getUser
+     *
+     * @return User
+     */
     public function getUser(): User
     {
         return $this->user;
     }
 
+    /**
+     * setUser
+     *
+     * @param  mixed $user
+     * @return void
+     */
     public function setUser(User $user): void
     {
         $this->user = $user;
     }
 
+    /**
+     * getComments
+     *
+     * @return array
+     */
     public function getComments(): array
     {
         return $this->comments;
     }
 
+    /**
+     * setComments
+     *
+     * @param  mixed $comments
+     * @return void
+     */
     public function setComments(array $comments): void
     {
         $this->comments = $comments;
