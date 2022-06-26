@@ -2,17 +2,30 @@
 
 namespace MonsterHunterBlog;
 
+/**
+ * Router
+ */
 class Router
 {
 
     private $routes;
 
+    /**
+     * __construct
+     *
+     * @return void
+     */
     public function __construct()
     {
         $this->routes = require_once './config/routes.php';
         $this->routing();
     }
 
+    /**
+     * routing
+     *
+     * @return void
+     */
     public function routing(): void
     {
 
@@ -39,6 +52,13 @@ class Router
         $controller->{$route['method']}();
     }
 
+    /**
+     * redirectToRoute
+     *
+     * @param  mixed $name
+     * @param  mixed $params
+     * @return void
+     */
     public static function redirectToRoute(string $name, array $params = []): void
     {
         $uri = $_SERVER['SCRIPT_NAME'] . "?page=" . $name;

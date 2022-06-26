@@ -6,6 +6,11 @@ abstract class Manager
 {
     protected \PDO $connection;
 
+    /**
+     * __construct
+     *
+     * @return void
+     */
     public function __construct()
     {
         $dbConfig = require './config/database.php';
