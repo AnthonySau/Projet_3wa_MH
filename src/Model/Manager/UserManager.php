@@ -5,9 +5,20 @@ namespace App\Model\Manager;
 use MonsterHunterBlog\Manager;
 use App\Model\Entity\User;
 
+/**
+ * UserManager
+ */
 class UserManager extends Manager
 {
-    // Fonction pour inserer un nouvel utilisateur
+
+    /**
+     * add
+     * 
+     * Fonction pour inserer un nouvel utilisateur en BDD
+     *
+     * @param  mixed $user
+     * @return void
+     */
     public function add(User $user): void
     {
         $sql = 'INSERT INTO users (email, password, pseudo, created_at) VALUES (:email, :password, :pseudo, :created_at)';
@@ -20,7 +31,14 @@ class UserManager extends Manager
         ]);
     }
 
-    // Fonction pour rechercher un utilisateur via son ID
+    /**
+     * find
+     * 
+     * Fonction pour rechercher un utilisateur via son ID en BDD
+     *
+     * @param  mixed $id
+     * @return User
+     */
     public function find(int $id): ?User
     {
         $sql = 'SELECT * FROM users WHERE users.id = :id';
@@ -35,7 +53,14 @@ class UserManager extends Manager
         return new User($user);
     }
 
-    // Fonction pour vérifier si une adresse mail est déjâ utiliser
+    /**
+     * findByEmail
+     * 
+     * Fonction pour vérifier si une adresse mail est déjâ utiliser en BDD
+     *
+     * @param  mixed $email
+     * @return User
+     */
     public function findByEmail(string $email): ?User
     {
         $sql = 'SELECT * FROM users WHERE users.email = :email';
@@ -50,7 +75,14 @@ class UserManager extends Manager
         return new User($user);
     }
 
-    // Fonction pour vérifier si un pseudo est déjâ utiliser
+    /**
+     * findByPseudo
+     * 
+     * Fonction pour vérifier si un pseudo est déjâ utiliser en BDD
+     *
+     * @param  mixed $pseudo
+     * @return User
+     */
     public function findByPseudo(string $pseudo): ?User
     {
         $sql = 'SELECT * FROM users WHERE users.pseudo = :pseudo';

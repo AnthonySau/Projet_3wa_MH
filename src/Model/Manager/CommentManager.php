@@ -9,9 +9,19 @@ use App\Model\Manager\ArticleManager;
 use App\Model\Entity\Article;
 use MonsterHunterBlog\Authenticator;
 
+/**
+ * CommentManager
+ */
 class CommentManager extends Manager
 {
-    // Fonction pour ajouter un commentaire
+    /**
+     * add
+     * 
+     * Fonction pour ajouter un commentaire en BDD
+     *
+     * @param  mixed $comment
+     * @return void
+     */
     public function add(Comment $comment): void
     {
         $sql = 'INSERT INTO comments (content, created_at, id_user, id_article) VALUES (:content, :created_at, :id_user, :id_article)';
@@ -24,7 +34,14 @@ class CommentManager extends Manager
         ]);
     }
 
-    // Fonction pour recupérer un article avec ses commentaires
+    /**
+     * findComments
+     * 
+     * Fonction pour recupérer les commentaires liés a son article en BDD
+     *
+     * @param  mixed $idArticle
+     * @return array
+     */
     public function findComments(int $idArticle): array
     {
         $sql = 'SELECT * FROM comments WHERE comments.id_article = :id_article';
@@ -45,7 +62,14 @@ class CommentManager extends Manager
         return $commentObjects;
     }
 
-    // Fonction pour trouver un commentaire
+    /**
+     * find
+     * 
+     * Fonction pour trouver un commentaire en BDD
+     *
+     * @param  mixed $id
+     * @return Comment
+     */
     public function find(int $id): ?Comment
     {
         $sql = 'SELECT * FROM comments WHERE comments.id = :id';
@@ -65,7 +89,14 @@ class CommentManager extends Manager
         return new Comment($comment);
     }
 
-    // Fonction pour supprimer un commentaire
+    /**
+     * delete
+     * 
+     * Fonction pour supprimer un commentaire en BDD
+     *
+     * @param  mixed $id
+     * @return void
+     */
     public function delete(int $id): void
     {
         $sql = "DELETE FROM comments WHERE id = :id";
@@ -75,7 +106,15 @@ class CommentManager extends Manager
         ]);
     }
 
-    // Fonction pour modifier un commentaire
+    /**
+     * edit
+     * 
+     * Fonction pour modifier un commentaire 
+     *
+     * @param  mixed $comment
+     * @param  mixed $id
+     * @return void
+     */
     public function edit(Comment $comment, int $id): void
     {
         $sql = "UPDATE comments SET content = :content WHERE id=:id";

@@ -7,10 +7,19 @@ use App\Model\Entity\Article;
 use App\Model\Manager\UserManager;
 use MonsterHunterBlog\Authenticator;
 
+/**
+ * ArticleManager
+ */
 class ArticleManager extends Manager
 {
-
-    // Fonction qui recupère un article
+    /**
+     * find
+     * 
+     * Fonction qui recupère un article en BDD
+     *
+     * @param  mixed $id
+     * @return Article
+     */
     public function find(int $id): ?Article
     {
         $sql = 'SELECT * FROM articles WHERE articles.id = :id';
@@ -31,7 +40,13 @@ class ArticleManager extends Manager
         return new Article($article);
     }
 
-    // Fonction qui recupère tous les articles
+    /**
+     * findAll
+     * 
+     * Fonction qui recupère tous les articles en BDD
+     *
+     * @return array
+     */
     public function findAll(): ?array
     {
         $sql = 'SELECT * FROM articles';
@@ -49,7 +64,14 @@ class ArticleManager extends Manager
         return $articlesObjects;
     }
 
-    // Fonction qui recupère les derniers articles
+    /**
+     * findLasts
+     *
+     * Fonction qui recupère les derniers articles en BDD
+     * 
+     * @param  mixed $nb
+     * @return array
+     */
     public function findLasts(int $nb): array
     {
         $sql = 'SELECT * FROM articles ORDER BY articles.created_at DESC LIMIT :limit';
@@ -70,7 +92,14 @@ class ArticleManager extends Manager
         return $articlesObjects;
     }
 
-    // Fonction pour ajouter un article
+    /**
+     * add
+     *
+     * Fonction pour ajouter un article en BDD
+     * 
+     * @param  mixed $article
+     * @return void
+     */
     public function add(Article $article): void
     {
         $sql = 'INSERT INTO articles (title, content, created_at, id_user) VALUES (:title, :content, :created_at, :id_user)';
@@ -83,7 +112,15 @@ class ArticleManager extends Manager
         ]);
     }
 
-    // Fonction pour mettre à jour un article
+    /**
+     * edit
+     * 
+     * Fonction pour mettre à jour un article en BDD
+     *
+     * @param  mixed $article
+     * @param  mixed $id
+     * @return void
+     */
     public function edit(Article $article, int $id): void
     {
         $sql = "UPDATE articles SET title = :title, content = :content, updated_at = :updated_at WHERE id = :id";
@@ -96,7 +133,14 @@ class ArticleManager extends Manager
         ]);
     }
 
-    // Fonction pour supprimer un article
+    /**
+     * delete
+     * 
+     * Fonction pour supprimer un article en BDD
+     *
+     * @param  mixed $id
+     * @return void
+     */
     public function delete(int $id): void
     {
         $sql = "DELETE FROM articles WHERE id = :id";
