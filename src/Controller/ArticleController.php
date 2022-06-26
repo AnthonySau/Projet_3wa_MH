@@ -9,8 +9,18 @@ use App\Model\Manager\ArticleManager;
 use App\Model\Manager\CommentManager;
 use MonsterHunterBlog\Authenticator;
 
+/**
+ * ArticleController
+ */
 class ArticleController extends Controller
 {
+    /**
+     * add
+     * 
+     * Function qui permet d'ajouter un article
+     *
+     * @return void
+     */
     public function add(): void
     {
         if (isset($_POST) && !empty($_POST)) {
@@ -27,6 +37,14 @@ class ArticleController extends Controller
             'title' => 'Ajouter un article'
         ]);
     }
+
+    /**
+     * list
+     * 
+     * Function qui permet de voir la liste des articles
+     *
+     * @return void
+     */
     public function list(): void
     {
         $articleManager = new ArticleManager();
@@ -37,6 +55,14 @@ class ArticleController extends Controller
         ]);
     }
 
+    /**
+     * show
+     * 
+     * Function qui permet d'afficher le contenu d'un article
+     * Function qui permet d'enregistrer un nouveau commentaire
+     *
+     * @return void
+     */
     public function show(): void
     {
         // Réception des données du commentaire
@@ -71,6 +97,13 @@ class ArticleController extends Controller
         }
     }
 
+    /**
+     * delete
+     * 
+     * Function qui permet de supprimer un article
+     *
+     * @return void
+     */
     public function delete(): void
     {
         if (isset($_GET['id']) && is_numeric($_GET['id'])) {
@@ -82,6 +115,13 @@ class ArticleController extends Controller
         }
     }
 
+    /**
+     * update
+     * 
+     * Function qui permet de modifier un article
+     *
+     * @return void
+     */
     public function update(): void
     {
         if (isset($_GET['id']) && is_numeric($_GET['id'])) {

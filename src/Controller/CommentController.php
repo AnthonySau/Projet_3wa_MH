@@ -9,8 +9,18 @@ use App\Model\Manager\CommentManager;
 use App\Model\Entity\Article;
 use MonsterHunterBlog\Authenticator;
 
+/**
+ * CommentController
+ */
 class CommentController extends Controller
 {
+    /**
+     * add
+     * 
+     * Function qui permet d'ajouter un commentaire
+     *
+     * @return void
+     */
     public function add(): void
     {
         if (isset($_POST) && !empty($_POST)) {
@@ -33,6 +43,13 @@ class CommentController extends Controller
         ]);
     }
 
+    /**
+     * update
+     * 
+     * Function qui permet de modifier un commentaire
+     *
+     * @return void
+     */
     public function update(): void
     {
         if (isset($_GET['idComment']) && is_numeric($_GET['idComment'])) {
@@ -52,6 +69,13 @@ class CommentController extends Controller
         }
     }
 
+    /**
+     * delete
+     * 
+     * Fonction qui permet de supprimer un commentaire
+     *
+     * @return void
+     */
     public function delete(): void
     {
         if (isset($_GET['id']) && is_numeric($_GET['id'])) {

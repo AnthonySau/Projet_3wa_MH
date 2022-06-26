@@ -8,9 +8,19 @@ use App\Model\Manager\UserManager;
 use App\Model\Entity\User;
 
 
+/**
+ * UserController
+ */
 class UserController extends Controller
 {
 
+    /**
+     * register
+     * 
+     * Function qui permet d'enregistrer un nouvel utilisateur
+     *
+     * @return void
+     */
     public function register(): void
     {
         $errors = [];
@@ -67,6 +77,13 @@ class UserController extends Controller
         ]);
     }
 
+    /**
+     * login
+     * 
+     * Function qui permet à l'utilisateur de se connecter
+     *
+     * @return void
+     */
     public function login(): void
     {
         $errors = [];
@@ -95,6 +112,13 @@ class UserController extends Controller
         ]);
     }
 
+    /**
+     * logout
+     * 
+     * Function qui permet a l'utilisateur de se deconnecter
+     *
+     * @return void
+     */
     public function logout(): void
     {
         Authenticator::logout();

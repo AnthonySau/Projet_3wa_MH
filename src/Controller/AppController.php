@@ -4,9 +4,21 @@ namespace App\Controller;
 
 use MonsterHunterBlog\Controller;
 
+/**
+ * AppController
+ * 
+ * @param MonsterHunterBlog\Controller 
+ */
 class AppController extends Controller
 {
 
+    /**
+     * home
+     * 
+     * Affiche la page Accueil
+     *
+     * @return void
+     */
     public function home(): void
     {
         $this->renderView('app/home.php', [
@@ -14,12 +26,27 @@ class AppController extends Controller
         ]);
     }
 
+    /**
+     * bestiary
+     * 
+     * Affiche la page Bestiaire
+     *
+     * @return void
+     */
     public function bestiary(): void
     {
         $this->renderView('app/bestiary.php', [
             'title' => 'Bestiaire'
         ]);
     }
+
+    /**
+     * weapon
+     *
+     * Affiche la page des armes
+     * 
+     * @return void
+     */
     public function weapon(): void
     {
         $this->renderView('app/weapon.php', [
@@ -27,6 +54,13 @@ class AppController extends Controller
         ]);
     }
 
+    /**
+     * armor
+     * 
+     * Affiche la page des armures
+     *
+     * @return void
+     */
     public function armor(): void
     {
         $this->renderView('app/armor.php', [
@@ -34,6 +68,13 @@ class AppController extends Controller
         ]);
     }
 
+    /**
+     * map
+     * 
+     * Affiche la page des cartes
+     *
+     * @return void
+     */
     public function map(): void
     {
         $this->renderView('app/map.php', [
