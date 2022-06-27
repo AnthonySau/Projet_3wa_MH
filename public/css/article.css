@@ -1,0 +1,23 @@
+/****** List Article *******/
+
+.list-article {
+  padding: 10px;
+  color: #fff;
+}
+
+.list-article a {
+  color: #fff;
+  list-style-type: none;
+}
+
+.list-article a li {
+  padding: 10px;
+  margin: 10px;
+  background-color: blueviolet;
+}
+
+.list-article a li:hover {
+  background-color: rgb(0, 0, 255);
+}
+
+/******* Show Article *******/

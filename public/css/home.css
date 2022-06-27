@@ -1,15 +1,9 @@
-.img-home {
-  background-image: url("../../public/images/imgFondEcran1.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 30px;
-}
-
 /* INTRODUCTION */
 
 .bgc-mirror {
   background-color: rgba(240, 248, 255, 0.506);
   border-radius: 10px;
+  margin: 10px;
   text-align: center;
 }
 
@@ -32,6 +26,11 @@
   text-align: center;
   border-radius: 5px;
   color: #fff;
+  background-color: #2a2e9c;
+}
+
+.card button {
+  background-color: #3357d8;
 }
 
 .card button a {
@@ -47,8 +46,12 @@ article {
   margin: 15px auto 0 auto;
 }
 
+article main:hover {
+  background-color: rgba(0, 0, 0, 0.596);
+}
+
 article main {
-  background-color: #1010114e;
+  background-color: #2a2e9c;
   border-radius: 20px;
   padding: 10px;
 }
@@ -63,12 +66,10 @@ article p {
 /*********************************************/
 
 @media screen and (min-width: 867px) {
-  .img-home {
-    padding: 150px;
-  }
-
   .bgc-mirror {
     padding: 10px;
+    max-width: 600px;
+    margin: 20px auto;
   }
 
   .flex {

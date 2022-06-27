@@ -17,20 +17,24 @@
       <link rel="stylesheet" href="./public/css/nav.css">
       <!-- Home CSS -->
       <link rel="stylesheet" href="./public/css/home.css">
-      <!-- Footer CSS -->
-      <link rel="stylesheet" href="./public/css/footer.css">
+      <!-- Article CSS -->
+      <link rel="stylesheet" href="./public/css/article.css">
       <!-- register CSS -->
       <link rel="stylesheet" href="./public/css/forms.css">
+      <!-- Footer CSS -->
+      <link rel="stylesheet" href="./public/css/footer.css">
       <!-- APP JS -->
       <script src="./public/js/app.js" defer></script>
 </head>
 
 <body>
-      <?php require './views/partials/_header.php'; ?>
-      <main class="container-main">
-            <?php require $templatePath ?>
-      </main>
-      <?php require './views/partials/_footer.php'; ?>
+      <div class="parralax">
+            <?php require './views/partials/_header.php'; ?>
+            <main class="container-main">
+                  <?php require $templatePath ?>
+            </main>
+            <?php require './views/partials/_footer.php'; ?>
+      </div>
 </body>
 
 </html>

@@ -29,9 +29,15 @@ a {
 
 .bgc-blue {
   background-color: #2a2e9c;
+  max-width: 900px;
+  margin: auto;
 }
 
-/* TITRE  */
+.bgc-blue-article {
+  background-color: #2a2e9c;
+}
+
+/*********** TITRE  ***********/
 h1 {
   display: flex;
   justify-content: start;
@@ -75,6 +81,14 @@ h6 {
   border-radius: 10px;
   font-size: 15px;
   padding: 5px;
+}
+
+.parralax {
+  background-image: url("../images/arriere-plan-img-mh.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /*********************************************/

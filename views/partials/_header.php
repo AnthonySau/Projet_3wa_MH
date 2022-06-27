@@ -1,5 +1,5 @@
 <header>
-	<a href="index.php?page=home">
+	<a class="logo" href="index.php?page=home">
 		<h1>Kokoto-MH</h1>
 	</a>
 	<button class="toggle-btn">
@@ -7,25 +7,25 @@
 		<div class="line"></div>
 		<div class="line"></div>
 	</button>
-	<nav class="navigation menu back">
+	<nav class="navigation menu back bgc-white">
 		<ul>
 			<li class="link"><a href="index.php?page=home">Accueil</a></li>
 			<li class="link"><a href="index.php?page=list_article">Actualité</a>
 			</li>
-			<li class="link univers"><a href="#">Univers</a>
+			<li class="link univers"><a class="icone-univers" href="#">Univers</a>
 				<ul id="menu-toggle" class="displayNone bgc-menu">
 					<li> <a class="hover" href="index.php?page=app_bestiary">Bestiaire</a>
 					</li>
-					<hr>
+
 					<li><a class="hover" href="index.php?page=app_armor">Armures</a>
 					</li>
-					<hr>
+
 					<li><a class="hover" href="index.php?page=app_weapon">Armes</a>
 					</li>
-					<hr>
+
 					<li><a class="hover" href="index.php?page=app_map">Cartes</a>
 					</li>
-					<hr>
+
 				</ul>
 			</li>
 
