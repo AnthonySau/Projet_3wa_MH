@@ -19,7 +19,7 @@
 /* SECTION CARDS */
 
 .card {
-  max-width: 300px;
+  width: 80%;
   padding: 30px;
   margin: 30px auto;
   border: 1px solid #fff;
@@ -65,7 +65,7 @@ article p {
 /************* MEDIA QUERIES *****************/
 /*********************************************/
 
-@media screen and (min-width: 867px) {
+@media screen and (min-width: 868px) {
   .bgc-mirror {
     padding: 10px;
     max-width: 600px;
@@ -78,7 +78,7 @@ article p {
   }
 
   .card {
-    width: 300px;
+    max-width: 400px;
     padding: 30px;
     margin: 20px;
     border: 1px solid #fff;
@@ -92,6 +92,10 @@ article p {
   }
 
   article main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
+    height: 150px;
   }
 }

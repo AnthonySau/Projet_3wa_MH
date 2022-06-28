@@ -56,10 +56,9 @@ header {
   justify-content: center;
   align-items: baseline;
   padding-top: 50px;
-  font-size: 15px;
   top: 0;
   right: 0;
-  width: 350px;
+  width: 250px;
   height: 100vh;
   background: rgb(255, 255, 255);
 }
@@ -75,7 +74,7 @@ header {
 
 .navigation ul {
   list-style: none;
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 200%;
   font-family: sans-serif;
   color: #171ca4;
@@ -128,6 +127,10 @@ header {
 
 .menuDeroulant {
   display: block;
+}
+
+.active {
+  position: fixed;
 }
 
 /*********************************************/

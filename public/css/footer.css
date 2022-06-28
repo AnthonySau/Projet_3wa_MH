@@ -7,6 +7,10 @@ footer {
   text-align: center;
 }
 
+footer p {
+  padding-bottom: 15px;
+}
+
 footer div {
   padding: 20px;
 }
