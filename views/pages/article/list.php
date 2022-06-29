@@ -5,7 +5,8 @@
         foreach ($data['articles'] as $article) { ?>
             <a href="index.php?page=show_article&idArticle=<?= $article->getId() ?>">
                 <li>
-                    <?= $article->getTitle() ?>
+                    <p><?= $article->getTitle() ?></p>
+                    <p> <?= $article->getResume() ?></p>
                 </li>
             </a>
         <?php } ?>

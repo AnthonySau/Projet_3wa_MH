@@ -102,10 +102,11 @@ class ArticleManager extends Manager
      */
     public function add(Article $article): void
     {
-        $sql = 'INSERT INTO articles (title, content, created_at, id_user) VALUES (:title, :content, :created_at, :id_user)';
+        $sql = 'INSERT INTO articles (title, resume, content, created_at, id_user) VALUES (:title, :resume, :content, :created_at, :id_user)';
         $query = $this->connection->prepare($sql);
         $query->execute([
             'title' => $article->getTitle(),
+            'resume' => $article->getResume(),
             'content' => $article->getContent(),
             'created_at' => date_format(new \DateTime('NOW'), 'Y-m-d H:i:s'),
             'id_user' => $article->getUser()->getId()
@@ -123,10 +124,11 @@ class ArticleManager extends Manager
      */
     public function edit(Article $article, int $id): void
     {
-        $sql = "UPDATE articles SET title = :title, content = :content, updated_at = :updated_at WHERE id = :id";
+        $sql = "UPDATE articles SET title = :title, resume = :resume, content = :content, updated_at = :updated_at WHERE id = :id";
         $query = $this->connection->prepare($sql);
         $query->execute([
             'title' => $article->getTitle(),
+            'resume' => $article->getResume(),
             'content' => $article->getContent(),
             'updated_at' => date_format(new \DateTime('NOW'), 'Y-m-d H:i:s'),
             'id' => $id

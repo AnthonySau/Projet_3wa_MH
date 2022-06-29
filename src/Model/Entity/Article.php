@@ -10,6 +10,7 @@ class Article
 
     private int $id;
     private string $title;
+    private string $resume;
     private string $content;
     private \DateTime $createdAt;
     private \DateTime $updatedAt;
@@ -28,6 +29,8 @@ class Article
             $this->id = (int) $article['id'];
         if (isset($article['title']))
             $this->title = (string) $article['title'];
+        if (isset($article['resume']))
+            $this->resume = (string) $article['resume'];
         if (isset($article['content']))
             $this->content = (string) $article['content'];
         if (isset($article['created_at']))
@@ -80,6 +83,27 @@ class Article
     public function setTitle(string $title): void
     {
         $this->title = $title;
+    }
+
+    /**
+     * getResume
+     *
+     * @return string
+     */
+    public function getResume(): string
+    {
+        return $this->resume;
+    }
+
+    /**
+     * setResume
+     *
+     * @param  mixed $resume
+     * @return void
+     */
+    public function setResume(string $resume): void
+    {
+        $this->title = $resume;
     }
 
     /**
