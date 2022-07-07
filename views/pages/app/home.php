@@ -5,7 +5,11 @@
             <div class="bgc-mirror">
                 <h2>Bienvenue sur le blog Kokoto-MH</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt odio cumque natus similique aspernatur vero doloribus, ipsa architecto veniam illo et aliquam corporis voluptatem animi tempore quam exercitationem fugit, optio dolores dolorem velit necessitatibus quod. Excepturi unde similique at cupiditate?
+                    Ici tu trouvera l'actualité qui concerne le célèbre jeu Monster Hunter.
+                </p>
+                <p>Laisse un commentaire sur tes reactions aux news.</p>
+                <p>
+                    Mais c'est pas tout ! Tu peux aller visiter le Bestiaire, les Armes, les Armures et les differentes Cartes du jeu. Amuse toi bien !
                 </p>
             </div>
         </div>
