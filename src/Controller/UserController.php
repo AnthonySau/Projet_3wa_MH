@@ -67,7 +67,7 @@ class UserController extends Controller
                     $passwordHash = password_hash($_POST['password'], PASSWORD_BCRYPT);
                     $user->setPassword($passwordHash);
                     $manager->add($user);
-                    $this->redirectToRoute('home');
+                    $this->redirectToRoute('user_login');
                 }
             }
         }

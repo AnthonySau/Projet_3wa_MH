@@ -39,7 +39,14 @@ label {
 }
 
 .padding {
-  padding: 45px;
+  padding: 50px 10px;
+}
+
+.img-user {
+  background-image: url("../images/image-connection.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /************** Button **************/

@@ -29,7 +29,7 @@ a {
 
 .bgc-blue {
   background-color: #2a2e9c;
-  max-width: 900px;
+  max-width: 700px;
   margin: auto;
 }
 
@@ -87,8 +87,9 @@ h6 {
   background-image: url("../images/arriere-plan-img-mh.jpeg");
   background-attachment: fixed;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
+  padding: 10px;
 }
 
 /*********************************************/

@@ -28,13 +28,11 @@
 </head>
 
 <body>
-      <div class="parralax">
-            <?php require './views/partials/_header.php'; ?>
-            <main class="container-main">
-                  <?php require $templatePath ?>
-            </main>
-            <?php require './views/partials/_footer.php'; ?>
-      </div>
+      <?php require './views/partials/_header.php'; ?>
+      <main>
+            <?php require $templatePath ?>
+      </main>
+      <?php require './views/partials/_footer.php'; ?>
 </body>
 
 </html>
