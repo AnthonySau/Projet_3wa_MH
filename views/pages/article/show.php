@@ -40,11 +40,14 @@
             $auth->isAuthenticated()
         ) { ?>
             <!-- Formulaire pour poster son commentaire -->
-            <form action="" method="POST">
-                <textarea name="content" id="content" placeholder="Votre commentaire...">
+            <fieldset>
+                <legend>Poste ton commentaire</legend>
+                <form action="" method="POST">
+                    <textarea name="content" id="content" placeholder="Votre commentaire...">
                 </textarea>
-                <input type="submit" value="Poster mon commentaire">
-            </form>
+                    <button type=" submit" value="Poster mon commentaire"><span>Valider</span></button>
+                </form>
+            </fieldset>
 
         <?php } else { ?> <p>Vous devez vous <a href="index.php?page=user_login">connecter
                 </a> pour poster un commentaire.</p>

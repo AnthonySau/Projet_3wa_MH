@@ -7,7 +7,9 @@
                 <textarea name="content" id="content" placeholder="Votre commentaire...">
                         <?= htmlspecialchars($data['comment']->getContent()) ?>
                 </textarea>
-                <button type="submit" value="Modifier mon commentaire"><span>Valider</span></button>
+                <button type="submit" value="Modifier mon commentaire">
+                    <span>Valider</span>
+                </button>
             </form>
         </fieldset>
     </div>
