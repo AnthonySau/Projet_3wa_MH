@@ -27,24 +27,24 @@ a {
 
 /*********** Couleur fond ***********/
 
-.bgc-blue {
-  background-color: #2a2e9c;
+.bgc-primary {
+  background-color: #000000ce;
   max-width: 700px;
   margin: auto;
+  border-radius: 10px;
 }
 
-.bgc-blue-article {
+.bgc-secondary-article {
   background-color: #2a2e9c;
 }
 
 /*********** TITRE  ***********/
+
 h1 {
-  display: flex;
-  justify-content: start;
-  padding: 25px 0 0 5px;
-  font-size: 14px;
   color: #fff;
   text-transform: uppercase;
+  padding-left: 5px;
+  padding-top: 15px;
 }
 
 h2 {
@@ -77,14 +77,14 @@ h5 {
 }
 
 h6 {
-  background-color: #2a2e9c93;
+  background-color: #9798b043;
   border-radius: 10px;
   font-size: 15px;
   padding: 5px;
 }
 
 .parralax {
-  background-image: url("../images/arriere-plan-img-mh.jpeg");
+  background-image: url('../images/image-parralax.jpeg');
   background-attachment: fixed;
   background-size: cover;
   background-position: top;
@@ -99,6 +99,7 @@ h6 {
 @media screen and (min-width: 867px) {
   h1 {
     font-size: 20px;
-    margin-left: 30px;
+    margin-left: 20px;
+    padding: 20px;
   }
 }

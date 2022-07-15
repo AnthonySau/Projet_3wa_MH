@@ -1,5 +1,5 @@
 header {
-  background: #3357d8;
+  background: #5a442e;
   height: 70px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
     rgba(0, 0, 0, 0.4) 0px 5px 3px 3px;
@@ -22,7 +22,7 @@ header {
   display: block;
   width: 70%;
   height: 3px;
-  background-color: #171ca4;
+  background-color: #5a442e;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -61,6 +61,7 @@ header {
   width: 250px;
   height: 100vh;
   background: rgb(255, 255, 255);
+  z-index: 999;
 }
 
 .icone-univers:hover::after {
@@ -77,7 +78,7 @@ header {
   font-size: 1.5em;
   line-height: 200%;
   font-family: sans-serif;
-  color: #171ca4;
+  color: #5a442e;
 }
 
 .navigation ul ul {
@@ -85,11 +86,11 @@ header {
 }
 
 .navigation ul a {
-  color: #171ca4;
+  color: #5a442e;
 }
 
 .navigation ul li a:hover {
-  color: #3357d8ae;
+  color: #63555553;
 }
 
 .navigation ul li {

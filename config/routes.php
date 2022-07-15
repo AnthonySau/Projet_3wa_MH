@@ -43,6 +43,11 @@ return [
         'controller' => App\Controller\UserController::class,
         'method' => 'register'
     ],
+    // Modifie le profil
+    'user_edit' => [
+        'controller' => App\Controller\UserController::class,
+        'method' => 'edit'
+    ],
     // Connexion
     'user_login' => [
         'controller' => App\Controller\UserController::class,
@@ -104,4 +109,5 @@ return [
         'controller' => App\Controller\CommentController::class,
         'method' => 'delete'
     ],
+
 ];

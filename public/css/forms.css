@@ -43,10 +43,12 @@ label {
 }
 
 .img-user {
-  background-image: url("../images/image-connection.jpeg");
+  background-image: url('../images/icones_monstre.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /************** Button **************/
@@ -74,7 +76,7 @@ button span {
 }
 
 button span:after {
-  content: "\00bb";
+  content: '\00bb';
   position: absolute;
   opacity: 0;
   top: 0;

@@ -115,7 +115,7 @@ class UserController extends Controller
     /**
      * logout
      * 
-     * Function qui permet a l'utilisateur de se deconnecter
+     * Function qui permet à l'utilisateur de se déconnecter
      *
      * @return void
      */
@@ -128,5 +128,27 @@ class UserController extends Controller
     public function profile(): void
     {
         $this->renderView('user/profile.php');
+    }
+
+    public function edit(): void
+    {
+        if (
+            isset($_POST['pseudo'], $_POST['email'])
+            && !empty($_POST['pseudo'])
+            && !empty($_POST['email'])
+        ) {
+            $userManager = new UserManager();
+            $user = new User([
+                'pseudo' => $_POST['pseudo'],
+                'email' => $_POST['email'],
+                'id' => $_SESSION['user_id']
+            ]);
+            $userManager->edit($user);
+            $this->redirectToRoute('user_profile');
+        }
+
+        $this->renderView('user/edit.php', [
+            'title' => 'Modifier le profil',
+        ]);
     }
 }

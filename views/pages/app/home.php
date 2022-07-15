@@ -1,17 +1,11 @@
 <div class="parralax">
-    <!-- Section Header -->
+    <!-- Section Introduction-->
     <section>
-        <div class="img-home">
-            <div class="bgc-mirror">
-                <h2>Bienvenue sur le blog Kokoto-MH</h2>
-                <p>
-                    Ici tu trouvera l'actualité qui concerne le célèbre jeu Monster Hunter.
-                </p>
-                <p>Laisse un commentaire sur tes reactions aux news.</p>
-                <p>
-                    Mais c'est pas tout ! Tu peux aller visiter le Bestiaire, les Armes, les Armures et les differentes Cartes du jeu. Amuse toi bien !
-                </p>
-            </div>
+        <div class="bgc-mirror">
+            <h2>Bienvenue sur le blog Kokoto-MH</h2>
+            <p> Site fan dédié au jeu Monster hunter.</p>
+            <p>Découvre l'univers dans lequel tu évolueras, viste le Bestiaire, trouve ton arme favorite, l'armure qui te plaît et l'endroit où tu devras te battre.</p>
+            <p>Consulte les articles récents et laisse un commentaire !</p>
         </div>
     </section>
 
@@ -19,23 +13,6 @@
     <section>
         <div class="title">
             <h3>Acutalité</h3>
-        </div>
-        <div class="flex">
-            <div class="card">
-                <h4>Lorem, ipsum.</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est rem tempora provident ex odio nostrum dolor officiis possimus rerum eos?</p>
-                <button><a href="#">Voir l'article</a></button>
-            </div>
-            <div class="card">
-                <h4>Lorem, ipsum.</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est rem tempora provident ex odio nostrum dolor officiis possimus rerum eos?</p>
-                <button><a href="#">Voir l'article</a></button>
-            </div>
-            <div class="card">
-                <h4>Lorem, ipsum.</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est rem tempora provident ex odio nostrum dolor officiis possimus rerum eos?</p>
-                <button><a href="#">Voir l'article</a></button>
-            </div>
         </div>
     </section>
 
@@ -46,15 +23,15 @@
         </div>
         <div class="flex">
             <article>
-                <main>
+                <main class="bg-bestiaire">
                     <a href="index.php?page=app_bestiary">
                         <h5>Bestiaire</h5>
-                        <p>Regardes les monstres que tu vas devoir affronter.</p>
+                        <p>Regardes les monstres que tu devras affronter.</p>
                     </a>
                 </main>
             </article>
             <article>
-                <main>
+                <main class="bg-armor">
                     <a href="index.php?page=app_armor">
                         <h5>Armures</h5>
                         <p>Découvre les armures qui te protègerons.</p>
@@ -62,15 +39,15 @@
                 </main>
             </article>
             <article>
-                <main>
+                <main class="bg-weapon">
                     <a href="index.php?page=app_weapon">
                         <h5>Armes</h5>
-                        <p>Découvre les armes avec lesquels tu taperas.</p>
+                        <p>Découvre les armes avec lesquelles tu taperas.</p>
                     </a>
                 </main>
             </article>
             <article>
-                <main>
+                <main class="bg-map">
                     <a href="index.php?page=app_map">
                         <h5>Cartes</h5>
                         <p>Découvre où est-ce que tu combattras.</p>

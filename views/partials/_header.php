@@ -1,13 +1,15 @@
 <header>
-	<a class="logo" href="index.php?page=home">
+	<a href="index.php?page=home">
 		<h1>Kokoto-MH</h1>
 	</a>
+
 	<button class="toggle-btn">
 		<div class="line"></div>
 		<div class="line"></div>
 		<div class="line"></div>
 	</button>
-	<nav class="navigation menu back bgc-white">
+
+	<nav class="navigation menu back">
 		<ul>
 			<li class="link"><a href="index.php?page=home">Accueil</a></li>
 			<li class="link"><a href="index.php?page=list_article">Actualité</a>

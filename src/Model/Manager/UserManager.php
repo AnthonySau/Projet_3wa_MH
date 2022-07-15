@@ -96,4 +96,16 @@ class UserManager extends Manager
         }
         return new User($user);
     }
+
+    public function edit(User $user): void
+    {
+        $sql = "UPDATE users SET pseudo = :pseudo, email = :email  WHERE id = :id";
+        $query = $this->connection->prepare($sql);
+
+        $query->execute([
+            'pseudo' => $user->getPseudo(),
+            'email' => $user->getEmail(),
+            'id' => $user->getId()
+        ]);
+    }
 }

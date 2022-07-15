@@ -8,7 +8,7 @@
 }
 
 .title {
-  background-color: #3357d8;
+  background-color: #5a442e;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.4) 0 3px 6px;
 }
 
@@ -18,42 +18,46 @@
 
 /* SECTION CARDS */
 
-.card {
-  width: 80%;
-  padding: 30px;
-  margin: 30px auto;
-  border: 1px solid #fff;
-  text-align: center;
-  border-radius: 5px;
-  color: #fff;
-  background-color: #2a2e9c;
-}
-
-.card button {
-  background-color: #3357d8;
-}
-
-.card button a {
-  color: #fff;
-}
-
 /* SECTION REPRISE MENU */
 
 article {
   padding: 20px;
   border-radius: 5px;
   max-width: 800px;
-  margin: 15px auto 0 auto;
-}
-
-article main:hover {
-  background-color: rgba(0, 0, 0, 0.596);
+  margin: 0 auto 0 auto;
 }
 
 article main {
-  background-color: #2a2e9c;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   border-radius: 20px;
   padding: 10px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+article:hover main {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.2);
+}
+
+article main.bg-bestiaire {
+  background-image: url("../images/image-bestaire-home.jpeg");
+}
+
+article main.bg-armor {
+  background-image: url("../images/image-armure-home.jpeg");
+}
+
+article main.bg-weapon {
+  background-image: url("../images/image-arme-home.jpeg");
+}
+
+article main.bg-map {
+  background-image: url("../images/image-carte-home.png");
 }
 
 article p {
@@ -77,16 +81,6 @@ article p {
     justify-content: space-around;
   }
 
-  .card {
-    max-width: 400px;
-    padding: 30px;
-    margin: 20px;
-    border: 1px solid #fff;
-    text-align: center;
-    border-radius: 5px;
-    color: #fff;
-  }
-
   article {
     max-width: 25%;
   }
@@ -97,5 +91,11 @@ article p {
     align-items: center;
     padding: 20px;
     height: 150px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 867px) {
+  article main {
+    background-position: 50% 70%;
   }
 }

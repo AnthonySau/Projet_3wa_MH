@@ -1,5 +1,5 @@
 <div class="img-user">
-    <section class="padding bgc-blue">
+    <section class="padding bgc-primary">
         <fieldset>
             <legend>Inscription</legend>
             <form action="" method="POST">
