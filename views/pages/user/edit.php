@@ -1,13 +1,16 @@
-<h1>Modifier le profil</h1>
+<section class="img-user">
+    <div class="padding bgc-primary">
+        <fieldset>
+            <legend>Modifier le profil</legend>
+            <form action="" method="POST">
+                <label for="pseudo">Pseudo</label>
+                <input type="text" name="pseudo" id="" value="<?= $auth->getUser()->getPseudo(); ?>">
 
-<form action="" method="POST">
+                <label for="firstname">Email</label>
+                <input type="text" name="firstname" id="" value="<?= $auth->getUser()->getEmail(); ?>">
 
-    <label for="pseudo">Pseudo</label>
-    <input type="text" name="pseudo" id="" value="<?= $auth->getUser()->getPseudo(); ?>">
-
-    <label for="firstname">Email</label>
-    <input type="text" name="firstname" id="" value="<?= $auth->getUser()->getEmail(); ?>">
-
-    <input type="submit" value="valider">
-
-</form>
+                <button type="submit" value="valider"><span>Valider</span></button>
+            </form>
+        </fieldset>
+    </div>
+</section>

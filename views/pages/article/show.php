@@ -42,11 +42,12 @@
             <!-- Formulaire pour poster son commentaire -->
             <form action="" method="POST">
                 <textarea name="content" id="content" placeholder="Votre commentaire...">
-    </textarea>
+                </textarea>
                 <input type="submit" value="Poster mon commentaire">
             </form>
 
-        <?php } else { ?> <p>Vous devez vous <a href="index.php?page=user_login">connecter</a> pour poster un commentaire.</p>
+        <?php } else { ?> <p>Vous devez vous <a href="index.php?page=user_login">connecter
+                </a> pour poster un commentaire.</p>
         <?php } ?>
     </div>
 </section>

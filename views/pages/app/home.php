@@ -12,7 +12,7 @@
     <!-- Section Actualité -->
     <section>
         <div class="title">
-            <h3>Acutalité</h3>
+            <h3>Actualité</h3>
         </div>
     </section>
 

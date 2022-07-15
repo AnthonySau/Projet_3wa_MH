@@ -1,5 +1,7 @@
 form {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 300px;
   margin: auto;
   padding: 10px;
@@ -21,21 +23,13 @@ legend {
   padding: 0 10px 0 10px;
 }
 
-input {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 10px;
-}
-
 input,
 label {
-  padding: 5px;
-  margin: 10px;
-  border-radius: 5px;
-  width: 250px;
-  text-align: start;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  max-width: 250px;
 }
 
 .padding {
@@ -49,6 +43,11 @@ label {
   background-repeat: no-repeat;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
 }
 
 /************** Button **************/

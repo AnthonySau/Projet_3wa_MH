@@ -30,7 +30,6 @@ article {
 article main {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   border-radius: 20px;
   padding: 10px;
   -webkit-transform: scale(1);
@@ -45,24 +44,28 @@ article:hover main {
 }
 
 article main.bg-bestiaire {
-  background-image: url("../images/image-bestaire-home.jpeg");
+  background-image: url('../images/image-bestaire-home.jpeg');
+  background-position: 20% 80%;
 }
 
 article main.bg-armor {
-  background-image: url("../images/image-armure-home.jpeg");
+  background-image: url('../images/image-armure-home.jpeg');
+  background-position: 20% 10%;
 }
 
 article main.bg-weapon {
-  background-image: url("../images/image-arme-home.jpeg");
+  background-image: url('../images/image-arme-home.jpeg');
+  background-position: 20% 10%;
 }
 
 article main.bg-map {
-  background-image: url("../images/image-carte-home.png");
+  background-image: url('../images/image-carte-home.png');
+  background-position: center;
 }
 
 article p {
   text-align: center;
-  color: #fff;
+  color: burlywood;
 }
 
 /*********************************************/
