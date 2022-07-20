@@ -48,11 +48,4 @@ footer div .flex a {
     justify-content: space-around;
     align-items: flex-start;
   }
-
-  h4 {
-    padding: 5px;
-    max-width: 200px;
-    margin: auto;
-    text-align: center;
-  }
 }

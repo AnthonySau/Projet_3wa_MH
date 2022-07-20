@@ -60,12 +60,12 @@ header {
   right: 0;
   width: 250px;
   height: 100vh;
-  background: rgb(255, 255, 255);
+  background: #757e76;
   z-index: 999;
 }
 
 .icone-univers:hover::after {
-  content: url("../images/fleche-vers-le-bas.png");
+  content: url('../images/fleche-vers-le-bas.png');
   margin-left: 15px;
 }
 
@@ -78,7 +78,7 @@ header {
   font-size: 1.5em;
   line-height: 200%;
   font-family: sans-serif;
-  color: #5a442e;
+  color: #fff;
 }
 
 .navigation ul ul {
@@ -86,11 +86,11 @@ header {
 }
 
 .navigation ul a {
-  color: #5a442e;
+  color: #fff;
 }
 
 .navigation ul li a:hover {
-  color: #63555553;
+  color: #a19999e6;
 }
 
 .navigation ul li {

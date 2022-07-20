@@ -16,8 +16,6 @@
   padding: 5px;
 }
 
-/* SECTION CARDS */
-
 /* SECTION REPRISE MENU */
 
 article {
@@ -28,6 +26,7 @@ article {
 }
 
 article main {
+  background-color: #856c53;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 20px;
@@ -43,29 +42,29 @@ article:hover main {
   transform: scale(1.2);
 }
 
-article main.bg-bestiaire {
+article main.bg-bestiaire:hover {
   background-image: url('../images/image-bestaire-home.jpeg');
   background-position: 20% 80%;
 }
 
-article main.bg-armor {
+article main.bg-armor:hover {
   background-image: url('../images/image-armure-home.jpeg');
   background-position: 20% 10%;
 }
 
-article main.bg-weapon {
+article main.bg-weapon:hover {
   background-image: url('../images/image-arme-home.jpeg');
   background-position: 20% 10%;
 }
 
-article main.bg-map {
+article main.bg-map:hover {
   background-image: url('../images/image-carte-home.png');
   background-position: center;
 }
 
 article p {
   text-align: center;
-  color: burlywood;
+  color: #fff;
 }
 
 /*********************************************/

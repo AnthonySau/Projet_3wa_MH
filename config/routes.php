@@ -43,7 +43,7 @@ return [
         'controller' => App\Controller\UserController::class,
         'method' => 'register'
     ],
-    // Modifie le profil
+    // Profil + Modifier le profil
     'user_edit' => [
         'controller' => App\Controller\UserController::class,
         'method' => 'edit'
@@ -57,11 +57,6 @@ return [
     'user_logout' => [
         'controller' => App\Controller\UserController::class,
         'method' => 'logout'
-    ],
-    // Profil
-    'user_profile' => [
-        'controller' => App\Controller\UserController::class,
-        'method' => 'profile'
     ],
 
     //? Routes Article (CRUD)

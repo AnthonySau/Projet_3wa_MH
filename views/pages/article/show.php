@@ -16,7 +16,22 @@
     </div>
 
     <div class="show-comment">
-        <h4>Commentaires :</h4>
+        <?php if (
+            $auth->isAuthenticated()
+        ) { ?>
+            <!-- Formulaire pour poster son commentaire -->
+            <fieldset>
+                <legend>Poste ton commentaire</legend>
+                <form action="" method="POST">
+                    <textarea name="content" id="content" placeholder="Votre commentaire...">
+                </textarea>
+                    <button type=" submit" value="Poster mon commentaire"><span>Valider</span></button>
+                </form>
+            </fieldset>
+
+        <?php } else { ?> <p>Vous devez vous <a href="index.php?page=user_login">connecter
+                </a> pour poster un commentaire.</p>
+        <?php } ?>
 
         <?php if (isset($data['article'])) foreach ($data['article']->getComments() as $comment) { ?>
 
@@ -36,21 +51,5 @@
         <?php } ?>
 
 
-        <?php if (
-            $auth->isAuthenticated()
-        ) { ?>
-            <!-- Formulaire pour poster son commentaire -->
-            <fieldset>
-                <legend>Poste ton commentaire</legend>
-                <form action="" method="POST">
-                    <textarea name="content" id="content" placeholder="Votre commentaire...">
-                </textarea>
-                    <button type=" submit" value="Poster mon commentaire"><span>Valider</span></button>
-                </form>
-            </fieldset>
-
-        <?php } else { ?> <p>Vous devez vous <a href="index.php?page=user_login">connecter
-                </a> pour poster un commentaire.</p>
-        <?php } ?>
     </div>
 </section>

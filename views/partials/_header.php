@@ -1,7 +1,7 @@
 <header>
-	<a href="index.php?page=home">
-		<h1>Kokoto-MH</h1>
-	</a>
+	<h1>
+		<a href="index.php?page=home">Kokoto-MH</a>
+	</h1>
 
 	<button class="toggle-btn">
 		<div class="line"></div>
@@ -40,7 +40,7 @@
 				</li>
 			<?php } else { ?>
 				<li>
-					<a class="hover" href="index.php?page=user_profile">
+					<a class="hover" href="index.php?page=user_edit">
 						<?= $auth->getUser()->getPseudo(); ?>
 					</a>
 				</li>

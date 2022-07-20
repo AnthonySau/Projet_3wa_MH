@@ -130,6 +130,13 @@ class UserController extends Controller
         $this->renderView('user/profile.php');
     }
 
+    /**
+     * edit
+     *
+     * Fonction pour éditer le profil
+     * 
+     * @return void
+     */
     public function edit(): void
     {
         if (
@@ -144,7 +151,7 @@ class UserController extends Controller
                 'id' => $_SESSION['user_id']
             ]);
             $userManager->edit($user);
-            $this->redirectToRoute('user_profile');
+            $this->redirectToRoute('user_edit');
         }
 
         $this->renderView('user/edit.php', [

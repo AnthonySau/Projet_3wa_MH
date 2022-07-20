@@ -1,5 +1,10 @@
 <section class="img-user">
     <div class="padding bgc-primary">
+        <h1>Profil de <?= $auth->getUser()->getPseudo() ?></h1>
+
+        <p>Pseudo : <?= $auth->getUser()->getPseudo(); ?></p>
+        <p>Email : <?= $auth->getUser()->getEmail(); ?> </p>
+
         <fieldset>
             <legend>Modifier le profil</legend>
             <form action="" method="POST">
