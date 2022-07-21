@@ -23,6 +23,7 @@ class CommentController extends Controller
      */
     public function add(): void
     {
+        Authenticator::firewall();
         if (isset($_POST) && !empty($_POST)) {
 
             $commentManager = new CommentManager();

@@ -12,8 +12,10 @@
             </a>
         <?php } ?>
 
-        <button>
-            <a href="index.php?page=add_article">Ajouter un article</a>
-        </button>
+        <?php if ($auth->getUser()->getRole() === false) { ?>
+            <button>
+                <a href="index.php?page=add_article">Ajouter un article</a>
+            </button>
+        <?php } ?>
     </div>
 </section>

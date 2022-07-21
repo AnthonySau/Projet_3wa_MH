@@ -21,12 +21,13 @@ class UserManager extends Manager
      */
     public function add(User $user): void
     {
-        $sql = 'INSERT INTO users (email, password, pseudo, created_at) VALUES (:email, :password, :pseudo, :created_at)';
+        $sql = 'INSERT INTO users (email, password, role, pseudo, created_at) VALUES (:email, :password, :role, :pseudo, :created_at)';
         $query = $this->connection->prepare($sql);
         $query->execute([
             'email' => $user->getEmail(),
             'pseudo' => $user->getPseudo(),
             'password' => $user->getPassword(),
+            'role' => $user->getRole(),
             'created_at' => date_format(new \DateTime('NOW'), 'Y-m-d H:i:s')
         ]);
     }

@@ -23,6 +23,7 @@ class ArticleController extends Controller
      */
     public function add(): void
     {
+        Authenticator::firewall();
         if (isset($_POST) && !empty($_POST)) {
             $articleManager = new ArticleManager();
             $article = new Article($_POST);
@@ -37,6 +38,7 @@ class ArticleController extends Controller
             'title' => 'Ajouter un article'
         ]);
     }
+
 
     /**
      * list

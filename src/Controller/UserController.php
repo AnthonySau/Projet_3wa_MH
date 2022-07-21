@@ -139,6 +139,7 @@ class UserController extends Controller
      */
     public function edit(): void
     {
+        Authenticator::firewall();
         if (
             isset($_POST['pseudo'], $_POST['email'])
             && !empty($_POST['pseudo'])

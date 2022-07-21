@@ -12,6 +12,7 @@ class User
     private string $pseudo;
     private string $email;
     private string $password;
+    private ?bool $role = true;
     private \DateTime $createdAt;
     private \DateTime $updatedAt;
 
@@ -31,6 +32,8 @@ class User
             $this->email = (string) $user['email'];
         if (isset($user['password']))
             $this->password = (string) $user['password'];
+        if (isset($user['role']))
+            $this->role = (bool) $user['role'];
         if (isset($user['created_at']))
             $this->createdAt = new \DateTime($user['created_at']);
         if (isset($user['updated_at']))
@@ -119,6 +122,27 @@ class User
     public function setPassword(string $password): void
     {
         $this->password = $password;
+    }
+
+    /**
+     * getRole
+     *
+     * @return bool
+     */
+    public function getRole(): bool
+    {
+        return $this->role;
+    }
+
+    /**
+     * setRole
+     *
+     * @param  mixed $role
+     * @return void
+     */
+    public function setRole(bool $role): void
+    {
+        $this->role = $role;
     }
 
     /**
