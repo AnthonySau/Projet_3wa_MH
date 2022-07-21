@@ -74,7 +74,7 @@ class ArticleManager extends Manager
      */
     public function findLasts(int $nb): array
     {
-        $sql = 'SELECT * FROM articles ORDER BY articles.created_at DESC LIMIT :limit';
+        $sql = 'SELECT * FROM articles ORDER BY articles.created_at DESC LIMIT 3';
         $query = $this->connection->prepare($sql);
         $query->execute([
             'limit' => $nb
