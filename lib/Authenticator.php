@@ -85,14 +85,14 @@ class Authenticator
     /**
      * firewall
      * 
-     * Redirige vers 'connexion' pour visionner le site.
+     * Redirige vers 'home'.
      *
      * @return void
      */
     static public function firewall(): void
     {
         if (!isset($_SESSION['user_id'])) {
-            Router::redirectToRoute('user_login');
+            Router::redirectToRoute('home');
         }
     }
 }
