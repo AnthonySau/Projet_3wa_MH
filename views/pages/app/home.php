@@ -12,6 +12,7 @@
     <!-- Section Actualité -->
     <section>
         <h3 class="title">Actualité</h3>
+        <h1><?= $data['title'] ?></h1>
         <?php
         foreach ($data['articles'] as $article) { ?>
             <a href="index.php?page=show_article&idArticle=<?= $article->getId() ?>">

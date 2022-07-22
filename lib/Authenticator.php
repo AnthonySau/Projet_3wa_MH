@@ -44,6 +44,17 @@ class Authenticator
     }
 
     /**
+     * role
+     *
+     * @param  mixed $role
+     * @return void
+     */
+    static public function role(bool $role): void
+    {
+        $_SESSION['role'] = $role;
+    }
+
+    /**
      * isAuthenticated
      *
      * Retourne 'true' si l'utilisateur est connecté. Gère l'affichage de nos templates.

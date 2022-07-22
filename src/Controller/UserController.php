@@ -104,6 +104,7 @@ class UserController extends Controller
             }
             if (empty($errors)) {
                 Authenticator::login($user->getId());
+                Authenticator::role($user->getRole());
                 $this->redirectToRoute('user_home');
             }
         }

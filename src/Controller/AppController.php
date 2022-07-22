@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use MonsterHunterBlog\Controller;
+use App\Model\Manager\ArticleManager;
 
 /**
  * AppController
@@ -21,8 +22,11 @@ class AppController extends Controller
      */
     public function home(): void
     {
+        $articleManager = new ArticleManager();
+        $articles = $articleManager->findLasts(3);
         $this->renderView('app/home.php', [
-            'title' => 'Accueil'
+            'title' => 'Accueil',
+            'articles' => $articles
         ]);
     }
 

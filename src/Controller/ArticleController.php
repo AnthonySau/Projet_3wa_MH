@@ -73,8 +73,10 @@ class ArticleController extends Controller
     {
         $articleManager = new ArticleManager();
         $articles = $articleManager->findLasts(3);
+        var_dump($articles);
+        die;
         $this->renderView('app/home.php', [
-            'title' => 'Actualité',
+            'title' => 'Bonjour',
             'articles' => $articles
         ]);
     }

@@ -71,6 +71,11 @@ return [
         'controller' => App\Controller\ArticleController::class,
         'method' => 'list'
     ],
+    // Liste des 3 derniers articles
+    'last_article' => [
+        'controller' => App\Controller\ArticleController::class,
+        'method' => 'lastList'
+    ],
     // Contenu d'un article
     'show_article' => [
         'controller' => App\Controller\ArticleController::class,
