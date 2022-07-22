@@ -4,7 +4,7 @@
         <div class="bgc-mirror">
             <h2>Bienvenue sur le blog Kokoto-MH</h2>
             <p> Site fan dédié au jeu Monster hunter.</p>
-            <p>Découvre l'univers dans lequel tu évolueras, viste le Bestiaire, trouve ton arme favorite, l'armure qui te plaît et l'endroit où tu devras te battre.</p>
+            <p>Découvre l'univers dans lequel tu évolueras, visite le Bestiaire, trouve ton arme favorite, l'armure qui te plaît et l'endroit où tu devras te battre.</p>
             <p>Consulte les articles récents et laisse un commentaire !</p>
         </div>
     </section>

@@ -28,8 +28,21 @@
   background-color: rgb(166, 159, 126);
 }
 
+.list-article button {
+  text-align: center;
+}
+
 .list-article button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
+}
+
+.span-add-article {
+  text-align: center;
+  margin-right: 10px;
+  font-size: 25px;
 }
 
 /******* Show Article *******/

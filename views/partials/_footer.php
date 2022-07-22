@@ -16,7 +16,7 @@
             </div>
         </div>
         <div>
-            <h6><span class="iconify" data-icon="logos:discord-icon"></span>Discord Officiel :</h6>
+            <h6><span class="iconify discord" data-icon="logos:discord-icon"></span>Discord Officiel :</h6>
             <div class="flex">
                 <a href="https://discord.com/invite/mhfr">Monster Hunter</a>
                 <a href="https://discord.gg/uxU4kRqz">Gemos</a>
