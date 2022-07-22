@@ -11,16 +11,22 @@
 
     <!-- Section Actualité -->
     <section>
-        <div class="title">
-            <h3>Actualité</h3>
-        </div>
+        <h3 class="title">Actualité</h3>
+        <?php
+        foreach ($data['articles'] as $article) { ?>
+            <a href="index.php?page=show_article&idArticle=<?= $article->getId() ?>">
+                <li>
+                    <p><?= $article->getTitle() ?></p>
+                    <p> <?= $article->getResume() ?></p>
+                    <p>Publié le <?= $article->getCreatedAt()->format('d-m-Y') ?>
+                </li>
+            </a>
+        <?php } ?>
     </section>
 
     <!-- Section Univers -->
     <section>
-        <div class="title">
-            <h3>Univers Monster Hunter</h3>
-        </div>
+        <h3 class="title">Univers Monster Hunter</h3>
         <div class="flex">
             <article>
                 <main class="bg-bestiaire">

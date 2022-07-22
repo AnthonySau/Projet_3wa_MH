@@ -17,7 +17,7 @@ class CommentController extends Controller
     /**
      * add
      * 
-     * Function qui permet d'ajouter un commentaire
+     * Fonction qui permet d'ajouter un commentaire
      *
      * @return void
      */
@@ -47,7 +47,7 @@ class CommentController extends Controller
     /**
      * update
      * 
-     * Function qui permet de modifier un commentaire
+     * Fonction qui permet de modifier un commentaire
      *
      * @return void
      */

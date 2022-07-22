@@ -17,7 +17,7 @@ class UserController extends Controller
     /**
      * register
      * 
-     * Function qui permet d'enregistrer un nouvel utilisateur
+     * Fonction qui permet d'enregistrer un nouvel utilisateur
      *
      * @return void
      */
@@ -80,7 +80,7 @@ class UserController extends Controller
     /**
      * login
      * 
-     * Function qui permet à l'utilisateur de se connecter
+     * Fonction qui permet à l'utilisateur de se connecter
      *
      * @return void
      */
@@ -115,7 +115,7 @@ class UserController extends Controller
     /**
      * logout
      * 
-     * Function qui permet à l'utilisateur de se déconnecter
+     * Fonction qui permet à l'utilisateur de se déconnecter
      *
      * @return void
      */

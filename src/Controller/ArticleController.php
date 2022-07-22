@@ -17,33 +17,38 @@ class ArticleController extends Controller
     /**
      * add
      * 
-     * Function qui permet d'ajouter un article
+     * Fonction qui permet d'ajouter un article
      *
      * @return void
      */
     public function add(): void
     {
         Authenticator::firewall();
-        if (isset($_POST) && !empty($_POST)) {
-            $articleManager = new ArticleManager();
-            $article = new Article($_POST);
-            $user = new Authenticator();
+        $user = new Authenticator();
+        if ($user->getUser()->getRole() === false) {
+            if (isset($_POST) && !empty($_POST)) {
+                $articleManager = new ArticleManager();
+                $article = new Article($_POST);
+                $user = new Authenticator();
 
-            $article->setUser($user->getUser());
+                $article->setUser($user->getUser());
 
-            $articleManager->add($article);
-            $this->redirectToRoute('app_actuality');
+                $articleManager->add($article);
+                $this->redirectToRoute('app_actuality');
+            }
+            $this->renderView('article/add.php', [
+                'title' => 'Ajouter un article'
+            ]);
+        } else {
+            $this->redirectToRoute('home');
         }
-        $this->renderView('article/add.php', [
-            'title' => 'Ajouter un article'
-        ]);
     }
 
 
     /**
      * list
      * 
-     * Function qui permet de voir la liste des articles
+     * Fonction qui permet de voir la liste des articles
      *
      * @return void
      */
@@ -58,10 +63,27 @@ class ArticleController extends Controller
     }
 
     /**
+     * lastList
+     *
+     *  Fonction qui permet de voir les 3 derniers article 
+     * 
+     * @return void
+     */
+    public function lastList(): void
+    {
+        $articleManager = new ArticleManager();
+        $articles = $articleManager->findLasts(3);
+        $this->renderView('app/home.php', [
+            'title' => 'Actualité',
+            'articles' => $articles
+        ]);
+    }
+
+    /**
      * show
      * 
-     * Function qui permet d'afficher le contenu d'un article
-     * Function qui permet d'enregistrer un nouveau commentaire
+     * Fonction qui permet d'afficher le contenu d'un article
+     * Fonction qui permet d'enregistrer un nouveau commentaire
      *
      * @return void
      */
@@ -102,7 +124,7 @@ class ArticleController extends Controller
     /**
      * delete
      * 
-     * Function qui permet de supprimer un article
+     * Fonction qui permet de supprimer un article
      *
      * @return void
      */
@@ -120,7 +142,7 @@ class ArticleController extends Controller
     /**
      * update
      * 
-     * Function qui permet de modifier un article
+     * Fonction qui permet de modifier un article
      *
      * @return void
      */
