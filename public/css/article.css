@@ -53,4 +53,26 @@
   font-size: 25px;
 }
 
-/****** Show Article & Comments *******/
+/****** Comments *******/
+
+section.show-comments {
+  margin-top: 20px;
+}
+
+section.show-comments main {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+.need-co {
+  /*! *********** Régler le probleme *********** */
+  background-color: #fff;
+}
+.show-comments p:nth-child(1) {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+.show-comments p:nth-child(2) {
+  font-size: 12px;
+}

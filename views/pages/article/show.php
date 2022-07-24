@@ -1,19 +1,27 @@
 <section class="bgc-article">
-    <div class="show-article">
-        <h6><?= htmlspecialchars($data['article']->getTitle()) ?></h6>
-        <p><?= htmlspecialchars($data['article']->getContent()) ?></p>
-        <p>Date de publication <?= htmlspecialchars($data['article']->getCreatedAt()->format('d-m-Y')) ?>
+    <article class="flex-article">
+        <main class="bloc-article">
+            <h2><?= htmlspecialchars($data['article']->getTitle()) ?></h2>
+            <p><?= htmlspecialchars($data['article']->getContent()) ?></p>
+            <p>Date de publication <?= htmlspecialchars($data['article']->getCreatedAt()->format('d-m-Y')) ?>
 
-            <?php if (
-                $auth->isAuthenticated() && $data['article']->getUser()->getId() ==
-                $auth->getUser()->getId()
-            ) { ?>
-                <a href="index.php?page=update_article&id=<?= htmlspecialchars($data['article']->getId()) ?>">Modifier
-                </a>
-                <a href="index.php?page=delete_article&id=<?= htmlspecialchars($data['article']->getId()) ?>">Supprimer
-                </a>
-            <?php } ?>
-    </div>
+                <?php if (
+                    $auth->isAuthenticated() && $data['article']->getUser()->getId() ==
+                    $auth->getUser()->getId()
+                ) { ?>
+                    <button>
+                        <a href="index.php?page=update_article&id=<?= htmlspecialchars($data['article']->getId()) ?>">
+                            <span>Modifier</span>
+                        </a>
+                    </button>
+                    <button>
+                        <a href="index.php?page=delete_article&id=<?= htmlspecialchars($data['article']->getId()) ?>">
+                            <span>Supprimer</span>
+                        </a>
+                    </button>
+                <?php } ?>
+        </main>
+    </article>
 
     <div class="show-comment">
         <?php if (
@@ -28,28 +36,29 @@
                     <button type=" submit" value="Poster mon commentaire"><span>Valider</span></button>
                 </form>
             </fieldset>
-
-        <?php } else { ?> <p>Vous devez vous <a href="index.php?page=user_login">connecter
-                </a> pour poster un commentaire.</p>
+            <!-- Phrase pour les utilisateurs non-connectés -->
+        <?php } else { ?> <span class="need-co">
+                <p>Vous devez vous <a href="index.php?page=user_login">connecter
+                    </a> pour poster un commentaire.
+                </p>
+            </span>
         <?php } ?>
 
-        <?php if (isset($data['article'])) foreach ($data['article']->getComments() as $comment) { ?>
+        <!-- Liste des commentaires  -->
+        <section class="show-comments">
+            <?php if (isset($data['article'])) foreach ($data['article']->getComments() as $comment) { ?>
+                <main>
+                    <p> <?= $comment->getContent() ?></p>
+                    <p>commenter par <?= $comment->getUser()->getPseudo() ?>
+                        le <?= htmlspecialchars($comment->getCreatedAt()->format('d-m-Y à H:i:s')) ?></p>
+                    <?php if ($auth->isAuthenticated() && $comment->getUser()->getId() == $auth->getUser()->getId()) { ?>
+                        <a href="index.php?page=update_comment&idComment=<?= htmlspecialchars($comment->getId()) ?>" role="button">Modifier
+                        </a>
 
-            <p> <?= $comment->getContent() ?></p>
-            <p>commenter par <?= $comment->getUser()->getPseudo() ?>
-                le <?= htmlspecialchars($comment->getCreatedAt()->format('d m Y à H:i:s')) ?></p>
-
-            <?php if ($auth->isAuthenticated() && $comment->getUser()->getId() == $auth->getUser()->getId()) { ?>
-
-                <a href="index.php?page=update_comment&idComment=<?= htmlspecialchars($comment->getId()) ?>" role="button">Modifier</a>
-
-                <a href="index.php?page=delete_comment&id=<?= htmlspecialchars($comment->getId()) ?>" class="secondary" role="button">Supprimer</a>
-                <br>
-
+                        <a href="index.php?page=delete_comment&id=<?= htmlspecialchars($comment->getId()) ?>" class="secondary" role="button">Supprimer</a>
+                    <?php } ?>
+                </main>
             <?php } ?>
-            <br>
-        <?php } ?>
-
-
+        </section>
     </div>
 </section>
