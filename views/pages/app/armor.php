@@ -1,1 +1,1 @@
-<h4>Liste Armure</h4>
+<h2>Liste Armure</h2>

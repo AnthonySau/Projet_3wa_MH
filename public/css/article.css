@@ -5,12 +5,20 @@
 }
 
 .list-article > a {
-  color: #5a442e;
+  color: #000000;
   list-style-type: none;
+}
+
+.list-article > h2 {
+  background-color: #fff;
 }
 
 .list-article p:nth-child(2) {
   padding: 15px;
+}
+
+.list-article p:nth-child(3) {
+  font-size: 15px;
 }
 
 .list-article p {
@@ -44,3 +52,5 @@
   margin-right: 10px;
   font-size: 25px;
 }
+
+/****** Show Article & Comments *******/

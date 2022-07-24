@@ -25,7 +25,11 @@ a {
 }
 
 .bgc-article {
-  background-color: #372410;
+  background-image: url('../images/imageArticle.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
   padding: 30px;
 }
 
@@ -57,12 +61,27 @@ h1 > a {
 
 h2 {
   /* home */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: rgb(0, 0, 0);
   margin: 0 auto 15px auto;
   padding: 10px;
   text-align: center;
   text-transform: uppercase;
   font-size: 20px;
+}
+
+h2::before,
+h2::after {
+  content: '';
+  display: inline-block;
+  min-width: 40px;
+  min-height: 40px;
+  margin: 0 5px;
+  align-items: center;
+  background: url('../images/imageTitre.png') no-repeat;
+  background-size: 100%;
 }
 
 h3 {
@@ -157,5 +176,10 @@ button:hover span:after {
   }
   .parralax {
     background-position: top;
+  }
+
+  h2::before,
+  h2::after {
+    margin: 0 35px;
   }
 }

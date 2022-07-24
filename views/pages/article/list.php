@@ -1,6 +1,6 @@
 <section class="bgc-article list-article">
     <div class="list-article">
-        <h4>Acutalité</h4>
+        <h2>Acutalité</h2>
         <?php if (isset($_SESSION['role']) && $_SESSION['role'] === false) { ?>
             <button>
                 <a href="index.php?page=add_article"><span class="iconify span-add-article" data-icon="carbon:add-filled"></span><span>Ajouter un article</span></a>
