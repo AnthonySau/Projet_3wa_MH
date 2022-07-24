@@ -1,22 +1,11 @@
-/* INTRODUCTION */
+/* SECTION LAST ARTICLE */
 
-.bgc-mirror {
-  background-color: rgba(240, 248, 255, 0.506);
-  border-radius: 10px;
-  margin: 10px;
+main.bloc-article p {
   text-align: center;
+  padding: 10px;
 }
 
-.title {
-  background-color: #5a442e;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.4) 0 3px 6px;
-}
-
-.bgc-mirror p {
-  padding: 5px;
-}
-
-/* SECTION REPRISE MENU */
+/* SECTION ARTICLE + REPRISE MENU */
 
 article {
   padding: 20px;
@@ -26,7 +15,15 @@ article {
 }
 
 article main {
-  background-color: #856c53;
+  background: #ada996;
+  background: -webkit-linear-gradient(
+    to right,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  );
+  background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 20px;
@@ -37,34 +34,34 @@ article main {
   transition: 0.3s ease-in-out;
 }
 
-article:hover main {
+.main-univers article:hover main {
   -webkit-transform: scale(1.3);
   transform: scale(1.2);
 }
 
-article main.bg-bestiaire:hover {
+.main-univers article main.bg-bestiaire:hover {
   background-image: url('../images/image-bestaire-home.jpeg');
   background-position: 20% 80%;
 }
 
-article main.bg-armor:hover {
+.main-univers article main.bg-armor:hover {
   background-image: url('../images/image-armure-home.jpeg');
   background-position: 20% 10%;
 }
 
-article main.bg-weapon:hover {
+.main-univers article main.bg-weapon:hover {
   background-image: url('../images/image-arme-home.jpeg');
   background-position: 20% 10%;
 }
 
-article main.bg-map:hover {
+.main-univers article main.bg-map:hover {
   background-image: url('../images/image-carte-home.png');
   background-position: center;
 }
 
-article p {
+.main-univers article p {
   text-align: center;
-  color: #fff;
+  color: rgb(1, 0, 0);
 }
 
 /*********************************************/
@@ -81,18 +78,26 @@ article p {
   .flex {
     display: flex;
     justify-content: space-around;
-  }
-
-  article {
-    max-width: 25%;
-  }
-
-  article main {
-    display: flex;
-    justify-content: center;
     align-items: center;
+  }
+
+  .flex-article {
+    max-width: 800px;
+  }
+
+  section.bloc-article {
+    border-radius: 20px;
+    width: 30%;
+    padding: 20px 35px;
+    margin: 30px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+      rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+      rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  }
+
+  .main-univers article main {
     padding: 20px;
-    height: 150px;
+    height: auto;
   }
 }
 

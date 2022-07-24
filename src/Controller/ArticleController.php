@@ -63,25 +63,6 @@ class ArticleController extends Controller
     }
 
     /**
-     * lastList
-     *
-     *  Fonction qui permet de voir les 3 derniers article 
-     * 
-     * @return void
-     */
-    public function lastList(): void
-    {
-        $articleManager = new ArticleManager();
-        $articles = $articleManager->findLasts(3);
-        var_dump($articles);
-        die;
-        $this->renderView('app/home.php', [
-            'title' => 'Bonjour',
-            'articles' => $articles
-        ]);
-    }
-
-    /**
      * show
      * 
      * Fonction qui permet d'afficher le contenu d'un article

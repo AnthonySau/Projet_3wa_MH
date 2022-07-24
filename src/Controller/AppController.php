@@ -16,7 +16,7 @@ class AppController extends Controller
     /**
      * home
      * 
-     * Affiche la page Accueil
+     * Affiche la page Accueil et la liste des 3 derniers article
      *
      * @return void
      */
@@ -25,7 +25,7 @@ class AppController extends Controller
         $articleManager = new ArticleManager();
         $articles = $articleManager->findLasts(3);
         $this->renderView('app/home.php', [
-            'title' => 'Accueil',
+            'title' => 'Actus',
             'articles' => $articles
         ]);
     }

@@ -1,5 +1,13 @@
 header {
-  background: #5a442e;
+  background: #ada996;
+  background: -webkit-linear-gradient(
+    to right,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  );
+  background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
   height: 70px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
     rgba(0, 0, 0, 0.4) 0px 5px 3px 3px;
@@ -22,7 +30,7 @@ header {
   display: block;
   width: 70%;
   height: 3px;
-  background-color: #5a442e;
+  background-color: #000000;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -60,7 +68,7 @@ header {
   right: 0;
   width: 250px;
   height: 100vh;
-  background: #757e76;
+  background: #1f1e1e;
   z-index: 999;
 }
 

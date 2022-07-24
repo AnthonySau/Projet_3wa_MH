@@ -1,6 +1,6 @@
 <!-- Formulaire pour modifier son commentaire -->
 <section class="img-user">
-    <div class="padding bgc-primary">
+    <div class="padding bgc-forms">
         <fieldset>
             <legend>Modifie ton commentaire</legend>
             <form action="" method="POST">

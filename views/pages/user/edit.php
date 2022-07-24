@@ -1,5 +1,5 @@
 <section class="img-user">
-    <div class="padding bgc-primary">
+    <div class="padding bgc-forms">
         <h1>Profil de <?= $auth->getUser()->getPseudo() ?></h1>
 
         <p>Pseudo : <?= $auth->getUser()->getPseudo(); ?></p>

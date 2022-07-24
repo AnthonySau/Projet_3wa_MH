@@ -1,4 +1,4 @@
-<section class="bgc-secondary-article">
+<section class="bgc-article">
     <div class="show-article">
         <h6><?= htmlspecialchars($data['article']->getTitle()) ?></h6>
         <p><?= htmlspecialchars($data['article']->getContent()) ?></p>

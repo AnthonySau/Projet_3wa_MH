@@ -1,14 +1,16 @@
 footer {
   display: flex;
   flex-direction: column;
-  background-color: #5a442e;
-  color: white;
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
   height: auto;
   text-align: center;
 }
 
 footer p {
   padding-bottom: 15px;
+  color: #fff;
 }
 
 footer div {
@@ -16,7 +18,7 @@ footer div {
 }
 
 footer div a {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 footer div .flex {
@@ -26,7 +28,7 @@ footer div .flex {
 
 footer div .flex a {
   padding: 10px;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .discord {
