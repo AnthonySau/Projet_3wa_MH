@@ -1,1 +1,1 @@
-<h2>Bestiaire</h2>
+<h2 class="title">Bestiaire</h2>

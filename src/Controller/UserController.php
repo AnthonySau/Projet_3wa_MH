@@ -126,11 +126,6 @@ class UserController extends Controller
         $this->redirectToRoute('login');
     }
 
-    public function profile(): void
-    {
-        $this->renderView('user/profile.php');
-    }
-
     /**
      * edit
      *
@@ -150,12 +145,11 @@ class UserController extends Controller
             $user = new User([
                 'pseudo' => $_POST['pseudo'],
                 'email' => $_POST['email'],
-                'id' => $_SESSION['user_id']
+                'id' => $_SESSION['id_user']
             ]);
             $userManager->edit($user);
-            $this->redirectToRoute('user_edit');
+            $this->redirectToRoute('home');
         }
-
         $this->renderView('user/edit.php', [
             'title' => 'Modifier le profil',
         ]);

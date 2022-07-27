@@ -41,7 +41,7 @@ label {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 textarea {
@@ -49,4 +49,11 @@ textarea {
   width: 100%;
   height: 100%;
   margin: 10px 0;
+}
+
+/************ Profil Utilisateur  *************/
+
+.edit-user p {
+  color: #fff;
+  padding: 5px;
 }

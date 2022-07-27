@@ -1,1 +1,1 @@
-<h2>Liste des Cartes</h2>
+<h2 class="title">Liste des Cartes</h2>

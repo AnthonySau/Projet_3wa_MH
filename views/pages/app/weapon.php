@@ -1,1 +1,1 @@
-<h2>Liste Armes</h2>
+<h2 class="title">Liste Armes</h2>

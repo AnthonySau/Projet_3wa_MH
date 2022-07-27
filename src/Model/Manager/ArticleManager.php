@@ -81,7 +81,7 @@ class ArticleManager extends Manager
         ]);
         $articles = $query->fetchAll();
         if (!$articles || empty($articles)) {
-            return null;
+            return [];
         }
         $articlesObjects = [];
         $userManager = new UserManager();
