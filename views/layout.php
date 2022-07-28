@@ -23,6 +23,8 @@
       <link rel="stylesheet" href="./public/css/forms.css">
       <!-- Footer CSS -->
       <link rel="stylesheet" href="./public/css/footer.css">
+      <!-- MAP CSS -->
+      <link rel="stylesheet" href="./public/css/map.css">
       <!-- APP JS -->
       <script src="./public/js/app.js" defer></script>
 </head>

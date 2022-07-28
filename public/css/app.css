@@ -11,6 +11,16 @@
   font-family: volkhov, sans-serif;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.second_container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -27,6 +37,7 @@ a {
 .bgc-article {
   background-image: url('../images/imageArticle.webp');
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   padding: 30px 0;

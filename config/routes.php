@@ -36,7 +36,7 @@ return [
     ],
 
 
-    //? Route User
+    //? Routes User
 
     // Inscription
     'user_register' => [
