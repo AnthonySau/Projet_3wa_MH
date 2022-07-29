@@ -39,6 +39,7 @@
   background: #000000;
   background: -webkit-linear-gradient(to right, #434343, #000000);
   background: linear-gradient(to right, #434343, #000000);
+  overflow: auto;
 }
 
 .card_text {
@@ -46,16 +47,69 @@
   font-size: 0.875rem;
   line-height: 1.5;
   margin-bottom: 1.25rem;
+  text-align: left;
+}
+
+#list-bestiary {
+  color: #fff;
+  margin-left: 1.5rem;
+  padding: 0.625rem;
+}
+
+.ol-bestiary a {
+  color: #fff;
+  line-height: 2.25;
+  background-color: rgb(255, 196, 0);
+  padding: 0.325rem;
+  border-radius: 0.325rem;
+}
+
+.ol-bestiary a:hover {
+  background-color: rgb(189, 147, 9);
+}
+
+#scroll_to_top {
+  position: fixed;
+  width: 25px;
+  height: 55px;
+  bottom: 50px;
+  right: 30px;
+  transition: 250ms;
+}
+#scroll_to_top img {
+  width: 45px;
 }
 
 @media (min-width: 40rem) {
   .cards_item {
     width: 50%;
   }
+  #list-bestiary ol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+  #list-bestiary ol a {
+    margin: auto 15px;
+  }
 }
 
 @media (min-width: 60rem) {
   .cards_item {
     width: 33%;
+  }
+  #list-bestiary ol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+  #list-bestiary ol a {
+    margin: auto 25px;
   }
 }
