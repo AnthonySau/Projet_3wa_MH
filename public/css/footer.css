@@ -2,8 +2,8 @@ footer {
   display: flex;
   flex-direction: column;
   background: #000000;
-  background: -webkit-linear-gradient(to right, #434343, #000000);
-  background: linear-gradient(to right, #434343, #000000);
+  background: -webkit-linear-gradient(to right, #9a9898, #b4b2b2);
+  background: linear-gradient(to right, #c2c0c0, #313131);
   height: auto;
   text-align: center;
 }

@@ -27,6 +27,8 @@
       <link rel="stylesheet" href="./public/css/map.css">
       <!-- APP JS -->
       <script src="./public/js/app.js" defer></script>
+      <!-- Search JS -->
+      <script src="./public/js/search.js" defer></script>
 </head>
 
 <body>

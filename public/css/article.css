@@ -30,7 +30,9 @@
 .list-article a li {
   padding: 0.625rem;
   margin: 0.625rem;
-  background-color: #fff;
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #9a9898, #b4b2b2);
+  background: linear-gradient(to right, #c2c0c0, #7f7f7f);
   border-radius: 0.625rem;
 }
 
@@ -72,7 +74,7 @@ section.show-comments main {
 }
 
 #need-co p {
-  color: #fff;
+  color: #000;
   text-align: center;
 }
 

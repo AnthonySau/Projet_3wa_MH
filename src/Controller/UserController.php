@@ -137,7 +137,7 @@ class UserController extends Controller
     {
         Authenticator::firewall();
         if (
-            isset($_POST['pseudo'], $_POST['email'])
+            isset($_POST['pseudo']) && isset($_POST['email'])
             && !empty($_POST['pseudo'])
             && !empty($_POST['email'])
         ) {
@@ -145,7 +145,7 @@ class UserController extends Controller
             $user = new User([
                 'pseudo' => $_POST['pseudo'],
                 'email' => $_POST['email'],
-                'id' => $_SESSION['id_user']
+                'id' => $_SESSION['user_id']
             ]);
             $userManager->edit($user);
             $this->redirectToRoute('home');

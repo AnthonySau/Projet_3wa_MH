@@ -43,7 +43,7 @@ a {
 }
 
 .bgc-article {
-  background-image: url('../images/image_fond_marron.webp');
+  background-image: url('../images/bg_fond.jpeg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -82,7 +82,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(0, 0, 0);
+  color: #fff;
   margin: 20px auto 25px auto;
   padding: 0.625rem;
   text-align: center;
@@ -100,6 +100,7 @@ h2::after {
   align-items: center;
   background: url('../images/icone_titre.png') no-repeat;
   background-size: 100%;
+  color: #fff;
 }
 
 h3 {
@@ -130,20 +131,16 @@ h5 {
 
 h6 {
   color: rgb(255, 196, 0);
+  background-color: rgb(49, 48, 48);
   font-size: 1.25rem;
-  padding-bottom: 0.93rem;
+  text-align: center;
+  padding: 0.325rem;
 }
 
 .title {
-  background: #ada996;
-  background: -webkit-linear-gradient(
-    to right,
-    #eaeaea,
-    #dbdbdb,
-    #f2f2f2,
-    #ada996
-  );
-  background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #969494);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.4) 0 3px 6px;
 }
 
