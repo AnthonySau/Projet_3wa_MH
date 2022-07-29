@@ -18,7 +18,7 @@
                         </li>
                     </a>
                 <?php } ?>
-                <p>Seul un admin est libre de poster de nouveaux articles.</p>
+                <p>Seul un Admin est libre de rajouter des articles.</p>
             </div>
         </div>
     </div>

@@ -1,4 +1,6 @@
-/****** List Article *******/
+/****************************/
+/******* List Article *******/
+/****************************/
 
 .list-article {
   color: #fff;
@@ -14,11 +16,11 @@
 }
 
 .list-article p:nth-child(2) {
-  padding: 15px;
+  padding: 0.93rem;
 }
 
 .list-article p:nth-child(3) {
-  font-size: 15px;
+  font-size: 0.93rem;
 }
 
 .list-article p {
@@ -26,10 +28,10 @@
 }
 
 .list-article a li {
-  padding: 10px;
-  margin: 10px;
+  padding: 0.625rem;
+  margin: 0.625rem;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 .list-article a li:hover {
@@ -49,20 +51,22 @@
 
 .span-add-article {
   text-align: center;
-  margin-right: 10px;
-  font-size: 25px;
+  margin-right: 0.625rem;
+  font-size: 1.56rem;
 }
 
-/****** Comments *******/
+/****************************/
+/****** Show Comments *******/
+/****************************/
 
 section.show-comments {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 section.show-comments main {
   background-color: rgb(255, 255, 255);
-  border-radius: 5px;
-  padding: 10px;
+  border-radius: 0.3rem;
+  padding: 0.625rem;
   margin: 10px auto;
   max-width: 900px;
 }
@@ -77,30 +81,30 @@ section.show-comments main {
 }
 
 .show-comments p:nth-child(1) {
-  font-size: 15px;
-  margin-bottom: 4px;
+  font-size: 0.93rem;
+  margin-bottom: 0.25rem;
 }
 .show-comments p:nth-child(2) {
-  font-size: 12px;
-  margin-bottom: 4px;
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
 }
 
 .show-comments .btnCommentModif a {
   background-color: green;
   color: #fff;
-  border-radius: 2px;
-  margin-top: 5px;
-  margin-right: 5px;
+  border-radius: 0.125rem;
+  margin-top: 0.3rem;
+  margin-right: 0.3rem;
   padding: 3px;
-  font-size: 10px;
+  font-size: 0.625rem;
 }
 
 .show-comments .btnCommentSuppr a {
   color: #fff;
   background-color: red;
-  border-radius: 2px;
+  border-radius: 0.125rem;
   padding: 3px;
-  font-size: 10px;
+  font-size: 0.625rem;
 }
 
 .show-comments .btnCommentSuppr a:hover {

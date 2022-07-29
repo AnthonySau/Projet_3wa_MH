@@ -7,7 +7,7 @@
             <li class="cards_item">
                 <div class="card">
                     <div class="card_image">
-                        <img src="./public/images/Map_Astera.jpeg" alt="village Monster hunter.">
+                        <img src="./public/images/maps/Map_Astera.jpeg" alt="village Monster hunter.">
                     </div>
                     <div class="card_content">
                         <h5>Astera</h5>
@@ -19,7 +19,7 @@
             <li class="cards_item">
                 <div class="card">
                     <div class="card_image">
-                        <img src="./public/images/Map_foretAncien.jpeg" alt="Carte avec une foret ancienne.">
+                        <img src="./public/images/maps/Map_foretAncien.jpeg" alt="Carte avec une forêt.">
                     </div>
                     <div class="card_content">
                         <h5>Foret Ancienne</h5>
@@ -31,7 +31,7 @@
             <li class="cards_item">
                 <div class="card">
                     <div class="card_image">
-                        <img src="./public/images/Map_Corail.jpeg" alt="Carte avec des montagnes et des cristeaux.">
+                        <img src="./public/images/maps/Map_Corail.jpeg" alt="Paysage avec des montagnes et des cristeaux.">
                     </div>
                     <div class="card_content">
                         <h5>Plateau de corail</h5>
@@ -43,7 +43,7 @@
             <li class="cards_item">
                 <div class="card">
                     <div class="card_image">
-                        <img src="./public/images/Map_desert.jpeg" alt="Carte avec du sable, le desert.">
+                        <img src="./public/images/maps/Map_desert.jpeg" alt="Paysage avec du sable.">
                     </div>
                     <div class="card_content">
                         <h5>Desert des termites</h5>
@@ -55,7 +55,7 @@
             <li class="cards_item">
                 <div class="card">
                     <div class="card_image">
-                        <img src="./public/images/Map_Putride.jpeg" alt="Carte avec du miasme, la mort y habite.">
+                        <img src="./public/images/maps/Map_Putride.jpeg" alt="Paysage avec de la fumée (miasme).">
                     </div>
                     <div class="card_content">
                         <h5>Val Putride</h5>
@@ -67,7 +67,7 @@
             <li class="cards_item">
                 <div class="card">
                     <div class="card_image">
-                        <img src="./public/images/Map_Ancien.jpeg" alt="Carte avec de la lave et des cristeaux blanc.">
+                        <img src="./public/images/maps/Map_Ancien.jpeg" alt="Paysage avec de la lave et des cristeaux blanc.">
                     </div>
                     <div class="card_content">
                         <h5>Terre des Anciens</h5>

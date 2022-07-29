@@ -1,6 +1,6 @@
 <section class="img-user">
     <div class="container">
-        <div class="padding bgc-forms">
+        <div class="padding-img bgc-forms">
             <fieldset>
                 <legend>Connexion</legend>
                 <form action="" method="POST">

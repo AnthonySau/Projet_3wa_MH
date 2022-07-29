@@ -9,12 +9,12 @@ footer {
 }
 
 footer p {
-  padding-bottom: 15px;
+  padding-bottom: 0.93rem;
   color: #fff;
 }
 
 footer div {
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 footer div a {
@@ -27,13 +27,13 @@ footer div .flex {
 }
 
 footer div .flex a {
-  padding: 10px;
+  padding: 0.625rem;
   color: rgb(255, 255, 255);
 }
 
 .discord {
   text-align: center;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 /*********************************************/

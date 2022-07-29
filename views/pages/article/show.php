@@ -49,12 +49,11 @@
             <section class="show-comments">
                 <?php if (isset($data['article'])) foreach ($data['article']->getComments() as $comment) { ?>
                     <main>
-                        <p> <?= $comment->getContent() ?></p>
+                        <p><?= $comment->getContent() ?></p>
                         <p>commenter par <?= $comment->getUser()->getPseudo() ?>
                             le <?= htmlspecialchars($comment->getCreatedAt()->format('d-m-Y à H:i:s')) ?></p>
                         <?php if ($auth->isAuthenticated() && $comment->getUser()->getId() == $auth->getUser()->getId()) { ?>
-                            <span class="btnCommentModif"><a href="index.php?page=update_comment&idComment=<?= htmlspecialchars($comment->getId()) ?>" role="button">Modifier
-                                </a></span>
+                            <span class="btnCommentModif"><a href="index.php?page=update_comment&idComment=<?= htmlspecialchars($comment->getId()) ?>" role="button">Modifier</a></span>
 
                             <span class="btnCommentSuppr"><a href="index.php?page=delete_comment&id=<?= htmlspecialchars($comment->getId()) ?>" class="secondary" role="button">Supprimer</a></span>
                         <?php } ?>

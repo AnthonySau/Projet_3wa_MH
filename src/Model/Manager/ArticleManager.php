@@ -49,7 +49,7 @@ class ArticleManager extends Manager
      */
     public function findAll(): ?array
     {
-        $sql = 'SELECT * FROM articles';
+        $sql = 'SELECT * FROM articles ORDER BY articles.created_at';
         $query = $this->connection->query($sql);
         $articles = $query->fetchAll();
         if (!$articles || empty($articles)) {

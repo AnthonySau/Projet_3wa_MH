@@ -4,7 +4,7 @@ form {
   align-items: center;
   max-width: 300px;
   margin: auto;
-  padding: 10px;
+  padding: 0.625rem;
   color: white;
   text-align: left;
 }
@@ -13,13 +13,13 @@ fieldset {
   max-width: 500px;
   margin: auto;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 legend {
   color: #f9f4f4;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
   padding: 0 10px 0 10px;
 }
 
@@ -28,12 +28,8 @@ label {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 10px;
+  padding: 0.625rem;
   max-width: 250px;
-}
-
-.padding {
-  padding: 50px 20px;
 }
 
 .img-user {
@@ -41,7 +37,7 @@ label {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 150px 0;
+  padding: 100px 0;
 }
 
 textarea {
@@ -55,5 +51,5 @@ textarea {
 
 .edit-user p {
   color: #fff;
-  padding: 5px;
+  padding: 0.3rem;
 }
