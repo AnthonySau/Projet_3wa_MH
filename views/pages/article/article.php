@@ -1,3 +1,5 @@
+<p>J'ai trouvé <?= $numberOfArticles ?> article(s) correspondant à votre recherche</p>
+
 <?php
 
 foreach ($articles as $article) { ?>
@@ -9,5 +11,3 @@ foreach ($articles as $article) { ?>
         </li>
     </a>
 <?php } ?>
-
-<p>J'ai trouvé <?= $numberOfArticles ?> article(s) correspondant à votre recherche</p>

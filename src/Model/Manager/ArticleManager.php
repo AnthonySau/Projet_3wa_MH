@@ -5,7 +5,6 @@ namespace App\Model\Manager;
 use MonsterHunterBlog\Manager;
 use App\Model\Entity\Article;
 use App\Model\Manager\UserManager;
-use MonsterHunterBlog\Authenticator;
 
 /**
  * ArticleManager

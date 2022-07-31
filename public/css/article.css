@@ -2,10 +2,6 @@
 /******* List Article *******/
 /****************************/
 
-.list-article {
-  color: #fff;
-}
-
 .list-article > a {
   color: #000000;
   list-style-type: none;

@@ -6,8 +6,6 @@ use MonsterHunterBlog\Manager;
 use App\Model\Manager\UserManager;
 use App\Model\Entity\Comment;
 use App\Model\Manager\ArticleManager;
-use App\Model\Entity\Article;
-use MonsterHunterBlog\Authenticator;
 
 /**
  * CommentManager
