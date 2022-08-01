@@ -3,7 +3,7 @@
 
         input.addEventListener('keyup', () => { 
             let textFind = document.querySelector('#search').value;
-            let myRequest = new Request('views/pages/article/getArticle.php', {
+            let myRequest = new Request('src/Model/Manager/SearchArticleManager.php', {
                 method  : 'POST',
                 body    : JSON.stringify({ textToFind : textFind })
             })

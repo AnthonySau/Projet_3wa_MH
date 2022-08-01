@@ -53,6 +53,17 @@
   font-size: 1.56rem;
 }
 
+#search {
+  margin-left: 20px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.flex_search {
+  display: flex;
+  flex-direction: column;
+}
+
 /****************************/
 /****** Show Comments *******/
 /****************************/
@@ -112,3 +123,11 @@ section.show-comments main {
 .show-comments .btnCommentModif a:hover {
   background-color: rgb(13, 149, 13);
 }
+
+@media screen and (min-width: 767px) {
+  .flex_search {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+} ;

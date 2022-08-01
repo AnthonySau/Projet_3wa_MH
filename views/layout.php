@@ -25,10 +25,13 @@
       <link rel="stylesheet" href="./public/css/footer.css">
       <!-- MAP CSS -->
       <link rel="stylesheet" href="./public/css/map.css">
-      <!-- APP JS -->
-      <script src="./public/js/app.js" defer></script>
+      <!-- Burger JS -->
+      <script src="./public/js/menuBurger.js" defer></script>
       <!-- Search JS -->
       <script src="./public/js/search.js" defer></script>
+      <!-- scrolling JS -->
+      <script src="./public/js/scrollingMenu.js" defer></script>
+
 </head>
 
 <body>
