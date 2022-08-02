@@ -33,7 +33,7 @@
                     <legend>Poste ton commentaire</legend>
                     <form action="" method="POST">
                         <textarea name="content" id="content" placeholder="Votre commentaire...">
-                </textarea>
+                         </textarea>
                         <button type=" submit" value="Poster mon commentaire"><span>Valider</span></button>
                     </form>
                 </fieldset>

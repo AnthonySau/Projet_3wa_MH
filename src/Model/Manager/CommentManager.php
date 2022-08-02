@@ -42,7 +42,7 @@ class CommentManager extends Manager
      */
     public function findComments(int $idArticle): array
     {
-        $sql = 'SELECT * FROM comments WHERE comments.id_article = :id_article';
+        $sql = 'SELECT * FROM comments WHERE comments.id_article = :id_article ORDER BY comments.created_at DESC';
         $query = $this->connection->prepare($sql);
         $query->bindValue(':id_article', $idArticle, \PDO::PARAM_INT);
         $query->execute();

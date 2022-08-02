@@ -73,7 +73,7 @@ section.show-comments {
 }
 
 section.show-comments main {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(187, 183, 183);
   border-radius: 0.3rem;
   padding: 0.625rem;
   margin: 10px auto;
@@ -122,6 +122,10 @@ section.show-comments main {
 
 .show-comments .btnCommentModif a:hover {
   background-color: rgb(13, 149, 13);
+}
+
+.show-comments legend {
+  color: #000;
 }
 
 @media screen and (min-width: 767px) {

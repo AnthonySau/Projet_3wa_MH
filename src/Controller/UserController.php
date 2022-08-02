@@ -136,22 +136,35 @@ class UserController extends Controller
     public function edit(): void
     {
         Authenticator::firewall();
+        $errors = [];
         if (
             isset($_POST['pseudo']) && isset($_POST['email'])
             && !empty($_POST['pseudo'])
             && !empty($_POST['email'])
         ) {
-            $userManager = new UserManager();
-            $user = new User([
-                'pseudo' => $_POST['pseudo'],
-                'email' => $_POST['email'],
-                'id' => $_SESSION['user_id']
-            ]);
-            $userManager->edit($user);
-            $this->redirectToRoute('home');
+            if (empty($errors)) {
+                $userManager = new UserManager();
+                $alreadyExists = $userManager->findByEmail($_POST['email']);
+                $alreadyExistsPseudo = $userManager->findByPseudo($_POST['pseudo']);
+                if ($alreadyExists) {
+                    $errors[] = "Cette adresse email existe déjà.";
+                }
+                if ($alreadyExistsPseudo) {
+                    $errors[] = "Ce pseudo existe déjâ.";
+                } else {
+                    $user = new User([
+                        'pseudo' => $_POST['pseudo'],
+                        'email' => $_POST['email'],
+                        'id' => $_SESSION['user_id']
+                    ]);
+                    $userManager->edit($user);
+                    $this->redirectToRoute('user_edit');
+                }
+            }
         }
         $this->renderView('user/edit.php', [
             'title' => 'Modifier le profil',
+            'errors' => $errors
         ]);
     }
 }

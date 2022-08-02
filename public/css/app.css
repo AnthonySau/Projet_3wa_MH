@@ -81,7 +81,6 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
   margin: 20px auto 25px auto;
   padding: 0.625rem;
   text-align: center;
@@ -137,9 +136,12 @@ h6 {
 }
 
 .title {
-  background: #000000;
-  background: -webkit-linear-gradient(to right, #434343, #000000);
-  background: linear-gradient(to right, #434343, #969494);
+  background: rgb(198, 168, 111);
+  background: linear-gradient(
+    120deg,
+    rgba(198, 168, 111, 1) 49%,
+    rgba(80, 68, 46, 1) 94%
+  );
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.4) 0 3px 6px;
 }
 
