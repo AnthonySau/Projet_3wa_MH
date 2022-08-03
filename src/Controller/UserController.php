@@ -53,9 +53,9 @@ class UserController extends Controller
             }
             if (empty($errors)) {
                 $manager = new UserManager();
-                $alreadyExists = $manager->findByEmail($_POST['email']);
+                $alreadyExistsEmail = $manager->findByEmail($_POST['email']);
                 $alreadyExistsPseudo = $manager->findByPseudo($_POST['pseudo']);
-                if ($alreadyExists) {
+                if ($alreadyExistsEmail) {
                     $errors[] = "Cette adresse email existe déjà.";
                 }
                 if ($alreadyExistsPseudo) {
@@ -139,17 +139,33 @@ class UserController extends Controller
         $errors = [];
         if (
             isset($_POST['pseudo']) && isset($_POST['email'])
-            && !empty($_POST['pseudo'])
-            && !empty($_POST['email'])
         ) {
+            if (
+                empty($_POST['email']) ||
+                empty($_POST['pseudo'])
+            ) {
+                $errors[] = "Tous les champs doivent être saisis.";
+            } else {
+                if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+                    $errors[] = "Format de l'adresse email non valide.";
+                }
+                $emailLength = strlen($_POST['email']);
+                if ($emailLength < 5 || $emailLength > 100) {
+                    $errors[] = "L'adresse email doit comporter entre 5 et 100 caractères.";
+                }
+                $pseudoLength = strlen($_POST['pseudo']);
+                if ($pseudoLength < 5 || $pseudoLength > 16) {
+                    $errors[] = "Le pseudo doit comporter entre 5 et 16 caractères.";
+                }
+            }
             if (empty($errors)) {
                 $userManager = new UserManager();
-                $alreadyExists = $userManager->findByEmail($_POST['email']);
-                $alreadyExistsPseudo = $userManager->findByPseudo($_POST['pseudo']);
-                if ($alreadyExists) {
+                $userEdit = new Authenticator();
+                $alreadyExistsEmail = $userManager->findByEmail(htmlspecialchars($_POST['email']));
+                $alreadyExistsPseudo = $userManager->findByPseudo(htmlspecialchars($_POST['pseudo']));
+                if ($alreadyExistsEmail && ($alreadyExistsEmail->getEmail() != $userEdit->getUser()->getEmail())) {
                     $errors[] = "Cette adresse email existe déjà.";
-                }
-                if ($alreadyExistsPseudo) {
+                } elseif ($alreadyExistsPseudo  && ($alreadyExistsPseudo->getPseudo() != $userEdit->getUser()->getPseudo())) {
                     $errors[] = "Ce pseudo existe déjâ.";
                 } else {
                     $user = new User([

@@ -1,1 +1,3 @@
 <h2 class="title">Liste Armure</h2>
+
+<p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. A quam culpa et dolore minima consequatur veritatis numquam molestias unde animi impedit sit praesentium eveniet illum quibusdam saepe, blanditiis quae excepturi laudantium maiores voluptatum fugit magnam nobis ipsam. Recusandae, quasi possimus! Perspiciatis magni quis distinctio officiis praesentium recusandae tempora aliquam at! </p>
