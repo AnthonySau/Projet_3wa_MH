@@ -23,5 +23,5 @@
             </div>
         </div>
     </div>
-    <p>&copy; 2022 Blog - Monster Hunter - Kokoto-MH. Tous droits réservés</p>
+    <p>&copy; 2022 Blog - Kokoto-MH. Tous droits réservés</p>
 </footer>

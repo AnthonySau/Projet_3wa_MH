@@ -2,7 +2,6 @@
     <div class="container">
         <h2 class="title">Les types d'Armes</h2>
         <section class="weapons">
-            <p class="elements">Il existe deux catégories d'armes dans l'arsenal du chasseur. Les armes de combat rapproché et les armes à distance. À vous de décider si vous êtes un chasseur "épéiste" ou "artilleur".</p>
             <article>
                 <h5>Armes de combat rapproché</h5>
                 <main class="list-armor">

@@ -13,25 +13,12 @@
       <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital@0;1&display=swap" rel="stylesheet">
       <!-- App CSS -->
       <link rel="stylesheet" href="./public/css/app.css">
-      <!-- Nav CSS -->
-      <link rel="stylesheet" href="./public/css/nav.css">
-      <!-- Home CSS -->
-      <link rel="stylesheet" href="./public/css/home.css">
-      <!-- Article CSS -->
-      <link rel="stylesheet" href="./public/css/article.css">
-      <!-- register CSS -->
-      <link rel="stylesheet" href="./public/css/forms.css">
-      <!-- Footer CSS -->
-      <link rel="stylesheet" href="./public/css/footer.css">
-      <!-- Univers CSS -->
-      <link rel="stylesheet" href="./public/css/univers.css">
       <!-- Burger JS -->
       <script src="./public/js/menuBurger.js" defer></script>
       <!-- Search JS -->
       <script src="./public/js/search.js" defer></script>
       <!-- scrolling JS -->
       <script src="./public/js/scrollingMenu.js" defer></script>
-
 </head>
 
 <body>
