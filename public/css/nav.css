@@ -71,7 +71,7 @@ header {
 
 .icone-univers:hover::after {
   content: url('../images/fleche-vers-le-bas.png');
-  margin-left: 0.93px;
+  margin-left: 0.93rem;
 }
 
 .back {

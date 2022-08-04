@@ -73,6 +73,12 @@ article main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+  }
+  .flex-univers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .flex-article {

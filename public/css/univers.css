@@ -1,6 +1,6 @@
-/*********************************/
-/******** Univers Cards **********/
-/*********************************/
+/***********************************************/
+/******** PAGE BESTIARE + PAGE CARTES **********/
+/***********************************************/
 
 .cards {
   display: flex;
@@ -80,6 +80,40 @@
 #scroll_to_top img {
   width: 45px;
 }
+
+/**************************/
+/****** PAGE ARMURE *******/
+/**************************/
+
+.list-armor {
+  padding: 10px;
+  margin: 20px;
+}
+.list-armor p,
+.elements {
+  padding: 15px;
+  list-style: none;
+  line-height: 25px;
+}
+.list-armor ul li {
+  padding: 5px;
+}
+.list-armor ul li:hover {
+  background-color: rgba(255, 255, 255, 0.411);
+  border-radius: 5px;
+  max-width: 150px;
+}
+.img-weapons img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+/**************************/
+/***** MEDIA QUERIES ******/
+/**************************/
 
 @media (min-width: 40rem) {
   .cards_item {

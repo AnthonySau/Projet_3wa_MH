@@ -23,8 +23,8 @@
       <link rel="stylesheet" href="./public/css/forms.css">
       <!-- Footer CSS -->
       <link rel="stylesheet" href="./public/css/footer.css">
-      <!-- MAP CSS -->
-      <link rel="stylesheet" href="./public/css/map.css">
+      <!-- Univers CSS -->
+      <link rel="stylesheet" href="./public/css/univers.css">
       <!-- Burger JS -->
       <script src="./public/js/menuBurger.js" defer></script>
       <!-- Search JS -->

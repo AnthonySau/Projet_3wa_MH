@@ -5,8 +5,8 @@
             <div class="bgc-mirror">
                 <h2>Bienvenue sur le blog Kokoto-MH</h2>
                 <p> Site fan dédié au jeu Monster Hunter.</p>
-                <p>Découvre l'univers dans lequel tu évolueras, visite le Bestiaire, trouve ton arme favorite, l'armure qui te plaît et l'endroit où tu devras te battre.</p>
-                <p>Consulte les articles récents et laisse un commentaire !</p>
+                <p>Découvre l'univers dans lequel tu évolueras, visite le Bestiaire, trouve ton arme favorite, renseignes-toi sur les talents des armures ou même l'endroit où tu devras te battre.</p>
+                <p>Consulte les articles récents et laisse un commentaire sur un article!</p>
             </div>
         </section>
 
@@ -31,7 +31,7 @@
         <!-- Section Univers -->
         <section>
             <h2 class="title">Univers Monster Hunter</h2>
-            <div class="flex main-univers">
+            <div class="flex-univers main-univers">
                 <article>
                     <main class="bg-bestiaire">
                         <a href="index.php?page=app_bestiary">

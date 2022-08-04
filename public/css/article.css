@@ -32,10 +32,6 @@
   border-radius: 0.625rem;
 }
 
-.list-article a li:hover {
-  background-color: rgb(166, 159, 126);
-}
-
 .list-article button {
   text-align: center;
 }
