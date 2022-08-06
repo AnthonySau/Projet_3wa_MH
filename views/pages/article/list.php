@@ -6,7 +6,7 @@
                 <div>
                     <input type="text" id="search" placeholder="Rechercher un article...">
                 </div>
-                <div>
+                <div class="padding-button">
                     <?php if (isset($_SESSION['role']) && $_SESSION['role'] === false) { ?>
                         <button>
                             <a href="index.php?page=add_article">

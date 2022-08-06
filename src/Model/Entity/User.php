@@ -110,7 +110,7 @@ class User
      */
     public function getPassword(): string
     {
-        return $this->password;
+        return htmlspecialchars($this->password);
     }
 
     /**

@@ -71,7 +71,7 @@ class Article
      */
     public function getTitle(): string
     {
-        return $this->title;
+        return htmlspecialchars($this->title);
     }
 
     /**
@@ -92,7 +92,7 @@ class Article
      */
     public function getResume(): string
     {
-        return $this->resume;
+        return htmlspecialchars($this->resume);
     }
 
     /**
@@ -113,7 +113,7 @@ class Article
      */
     public function getContent(): string
     {
-        return $this->content;
+        return htmlspecialchars($this->content);
     }
 
     /**

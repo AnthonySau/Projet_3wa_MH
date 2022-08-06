@@ -7,11 +7,18 @@
   font-family: volkhov, sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 /* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .second_container {
   max-width: 900px;
   margin: 0 auto;
@@ -38,7 +45,7 @@ a {
 }
 
 .padding-img {
-  padding: 30px 0;
+  padding: 10px 0;
 }
 
 /***********************************************/
@@ -58,6 +65,7 @@ a {
 }
 
 .bgc-article {
+  height: 100%;
   background-image: url('../images/bgcHome.jpeg');
   background-size: cover;
   background-attachment: fixed;
@@ -208,6 +216,10 @@ button:hover span {
 button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.padding-button {
+  padding-right: 20px;
 }
 
 /***********************************************/
@@ -703,11 +715,14 @@ textarea {
 
 /* Bgc formulaire */
 .img-user {
+  padding-top: 180px;
+  padding-bottom: 180px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-image: url('../images/bgc_forms.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 45px 0;
 }
 
 /* Profil utilisateur */
@@ -731,6 +746,7 @@ footer {
   );
   height: auto;
   text-align: center;
+  margin-top: auto;
 }
 
 footer div {

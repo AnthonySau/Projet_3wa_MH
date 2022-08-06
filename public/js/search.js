@@ -1,7 +1,6 @@
-'use strict';
-        let input = document.querySelector("#search");
+let input = document.querySelector("#search");
 
-        input.addEventListener('keyup', () => { 
+input.addEventListener('keyup', () => { 
             let textFind = document.querySelector('#search').value;
             let myRequest = new Request('src/Model/Manager/SearchArticleManager.php', {
                 method  : 'POST',

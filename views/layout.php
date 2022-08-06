@@ -7,6 +7,8 @@
       <title>Blog - Monster Hunter</title>
       <!-- Iconify -->
       <script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
+      <!-- Font awesome -->
+      <script src="https://kit.fontawesome.com/b87194bec0.js" crossorigin="anonymous"></script>
       <!-- Font Family -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
